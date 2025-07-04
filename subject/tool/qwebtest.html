@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>webchannel TEST</title>
+</head>
+<body>
+    <p>webchannel test</p>
+    <script type="text/javascript" src="qwebchannel.js"></script>
+    <script type="text/javascript">
+		function newQWebChannel() {
+			return new QWebChannel(qt.webChannelTransport, function(channel) {
+						XrenderLoginHelper = channel.objects.XrenderLoginHelper;
+						console.log("qt object XrenderLoginHelper succ!", XrenderLoginHelper);
+						resolve();
+					})
+		}
+		
+		var XrenderLoginHelper;
+		async function init_qt() {
+			await newQWebChannel();
+		}
+
+		init_qt();
+		console.log("123");
+		// 需要等待XrenderLoginHelper被获取到
+		
+		token();
+		
+		async function token() {
+			console.log("12345");
+			var token = await XrenderLoginHelper.accessToken();
+			console.log("accessToken", token);
+		}
+
+		function clipboard() {
+			XrenderLoginHelper.clipboard("我复制了");
+		}
+	</script>
+    <button type="button" onclick="token()">获取token </button>
+	<button type="button" onclick="clipboard()">复制到系统粘贴板 </button>
+</body>
+</html>
