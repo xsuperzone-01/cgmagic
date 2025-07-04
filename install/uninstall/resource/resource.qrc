@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>default.qss</file>
+        <file>logo.png</file>
+        <file>openDir.png</file>
+        <file>status/load/mainlogo.png</file>
+        <file>radio.png</file>
+        <file>radioDisabled.png</file>
+        <file>unradio.png</file>
+        <file>unradioDisabled.png</file>
+        <file>unradioHover.png</file>
+        <file>check.png</file>
+        <file>checkDisabled.png</file>
+        <file>close.png</file>
+        <file>closeDisabled.png</file>
+        <file>closeHover.png</file>
+        <file>closePressed.png</file>
+        <file>max.png</file>
+        <file>maxDisabled.png</file>
+        <file>maxHover.png</file>
+        <file>maxPressed.png</file>
+        <file>min.png</file>
+        <file>minDisabled.png</file>
+        <file>minHover.png</file>
+        <file>minPressed.png</file>
+        <file>uncheck.png</file>
+        <file>uncheckDisabled.png</file>
+        <file>uncheckHover.png</file>
+        <file>openDirDisabled.png</file>
+        <file>openDirHover.png</file>
+        <file>openDirPressed.png</file>
+        <file>resource.qrc</file>
+        <file>background.png</file>
+        <file>titleIcon.png</file>
+        <file>language/en_us.qm</file>
+        <file>language/zh_cn.qm</file>
+        <file>default_en.qss</file>
+        <file>status/load/mainlogo_en.png</file>
+    </qresource>
+</RCC>
