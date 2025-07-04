@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN">
+<plist version="1.0">
+<dict>
+	<key>CFBundleShortVersionString</key>
+	<string>2.8.5</string>
+	<key>CFBundleVersion</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIconFile</key>
+	<string>mac.icns</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>CFBundleDisplayName</key>
+	<string>赞奇超高清云工作站</string>
+	<key>CFBundleName</key>
+	<string>赞奇超高清云工作站</string>
+	<key>CFBundleExecutable</key>
+	<string>xdemo</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.xsuperzone.xdemo</string>
+	<key>CFBundleSignature</key>
+	<string></string>
+	<key>NSHumanReadableCopyright</key>
+	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow this app to access your microphone for recording</string>
+        <key>NSCameraUsageDescription</key>
+        <string>Allow this app to access your camera for recording</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>daimao URL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>daimao</string>
+			</array>
+			<key>LSHandlerRank</key>
+			<string>Default</string>
+			<key>LSIsAppleDefaultForScheme</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

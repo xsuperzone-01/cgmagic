@@ -1,0 +1,78 @@
+//https://docs.microsoft.com/zh-cn/windows/win32/menurc/versioninfo-resource
+
+#pragma code_page(65001)
+
+#include <winver.h>
+#include <winnt.h>
+#include "version.h"
+
+#ifdef INSTALL
+#include "../install/install/exe.h"
+#define EXE_ICON "../install/install/exe.ico"
+#elif defined (UNINSTALL)
+#include "../install/uninstall/exe.h"
+#define EXE_ICON "../install/uninstall/exe.ico"
+#else
+#include "exe.h"
+#define EXE_ICON "exe.ico"
+#endif
+
+//属性页 语言中文
+LANGUAGE LANG_CHINESE_SIMPLIFIED,SUBLANG_CHINESE_SIMPLIFIED
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     CLIENT_VERSION_COMMA
+PRODUCTVERSION  CLIENT_VERSION_COMMA
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "赞奇科技"
+            VALUE "FileDescription", FILE_DESCRIPTION
+			VALUE "FileVersion", CLIENT_VERSION
+			VALUE "InternalName", FILE_DESCRIPTION
+            VALUE "LegalCopyright", "© 江苏赞奇科技股份有限公司. All Rights Reserved."
+            VALUE "OriginalFileName", ORIGINAL_FILENAME
+            VALUE "ProductName", FILE_DESCRIPTION
+			VALUE "ProductVersion", CLIENT_VERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 0x4b0
+    END
+END
+
+//属性页 语言英文
+LANGUAGE LANG_ENGLISH,SUBLANG_ENGLISH_US
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     CLIENT_VERSION_COMMA
+PRODUCTVERSION  CLIENT_VERSION_COMMA
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Xsuperzone"
+            VALUE "FileDescription", FILE_DESCRIPTION_EN
+			VALUE "FileVersion", CLIENT_VERSION
+			VALUE "InternalName", FILE_DESCRIPTION_EN
+            VALUE "LegalCopyright", "© Xsuperzone. All Rights Reserved."
+            VALUE "OriginalFileName", ORIGINAL_FILENAME
+            VALUE "ProductName", FILE_DESCRIPTION_EN
+			VALUE "ProductVersion", CLIENT_VERSION
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4B0
+    END
+END
+
+IDI_ICON1	ICON	DISCARDABLE	EXE_ICON
