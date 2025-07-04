@@ -1,0 +1,16 @@
+﻿#ifndef VERSION_H
+#define VERSION_H
+
+#define VER_MAJOR 5
+#define VER_MINOR 2
+#define VER_PATCH 43
+
+
+//COMMA 打包格式为?,?,? 只能有2个,号
+#define STRINGIFY(x) #x
+#define TOSTRING(x) STRINGIFY(x)
+
+#define CLIENT_VERSION_COMMA VER_MAJOR,VER_MINOR,VER_PATCH
+#define CLIENT_VERSION TOSTRING(VER_MAJOR.VER_MINOR.VER_PATCH)
+
+#endif // VERSION_H
