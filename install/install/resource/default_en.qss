@@ -1,0 +1,13 @@
+﻿Widget #license {
+    font-style: oblique;
+    text-decoration:underline;
+}
+
+#frame {
+    border-image: url(:/status/load/mainlogo_en.png);
+}
+
+.afterText {
+    font-size: 36px;
+    color: #FFFFFF;
+}

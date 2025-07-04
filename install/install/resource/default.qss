@@ -1,0 +1,315 @@
+﻿/* 公共 */
+QWidget {
+    font-size: 14px;
+    color: #CFD3DC;
+    outline: none;
+    background: transparent;
+}
+
+QPushButton {
+    background: transparent;
+}
+
+QCheckBox::indicator, QTableView::indicator {
+    width: 14px;
+    height: 14px;
+}
+QCheckBox::indicator {
+    margin-right: 4px;
+}
+
+/*需要资源库才能修改*/
+QCheckBox::indicator:unchecked, QTableView::indicator:unchecked{border-image: url(:/uncheck.png);}
+QCheckBox::indicator:unchecked:hover, QTableView::indicator:unchecked:hover{border-image: url(:/uncheckHover.png);}
+QCheckBox::indicator:unchecked:pressed, QTableView::indicator:unchecked:pressed{border-image: url(:/uncheckHover.png);}
+QCheckBox::indicator:unchecked:disabled, QTableView::indicator:unchecked:disabled{border-image: url(:uncheckDisabled.png);}
+QCheckBox::indicator:checked, QTableView::indicator:checked{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:hover, QTableView::indicator:checked:hover{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:pressed, QTableView::indicator:checked:pressed{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:disabled, QTableView::indicator:checked:disabled{border-image: url(:/checkDisabled.png);}
+
+QCheckBox::unchecked{color:#CFD3DC;}
+QCheckBox::unchecked:hover{color:#E5EAF3;}
+QCheckBox::unchecked:pressed{color:#E5EAF3;}
+QCheckBox::unchecked:disabled{color:#E5EAF3;}
+QCheckBox::checked{color:#E5EAF3;}
+QCheckBox::checked:hover{color:#E5EAF3;}
+QCheckBox::checked:pressed{color:#E5EAF3;}
+QCheckBox::checked:disabled{color:#CFD3DC;}
+
+.min {
+    border-image: url(:/min.png);
+}
+.min:hover {
+    border-image: url(:/minHover.png);
+}
+.min:pressed {
+    border-image: url(:/minPressed.png);
+}
+.min:disabled {
+    border-image: url(:/minDisabled.png);
+}
+.max[maximize="maxmax"] {
+    border-image: url(:/max.png);
+}
+.max[maximize="maxmax"]:hover {
+    border-image: url(:/maxHover.png);
+}
+.max[maximize="maxmax"]:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max[maximize="maxmax"]:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.max[maximize="maxmin"] {
+    border-image: url(:/max.png);
+}
+.max[maximize="maxmin"]:hover {
+    border-image: url(:/maxHover.png);
+}
+.max[maximize="maxmin"]:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max[maximize="maxmin"]:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.close {
+    border-image: url(:/close.png);
+}
+.close:hover {
+    border-image: url(:/closeHover.png);
+}
+.close:pressed {
+    border-image: url(:/closePressed.png);
+}
+.close:disabled {
+    border-image: url(:/closeDisabled.png);
+}
+
+.okBtn {
+    border: none;
+    background: #137DD3;
+    color: #E5EAF3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.okBtn:hover {
+    background: #33A3FF;
+}
+.okBtn:pressed {
+    background: #004EA2;
+}
+.okBtn:disabled {
+    background: #003661;
+    color: #6C6E72;
+}
+
+.noBtn {
+    background: rgba(255,255,255,0.1);
+    color: #E5EAF3;
+/*    border: 1px solid rgba(255,255,255,0.1);*/
+    border-radius: 4px;
+    font-size: 14px;
+}
+.noBtn:hover {
+    color: #409EFF;
+/*    border: 1px solid #00D8C8;*/
+}
+.noBtn:pressed {
+    color: #66B1FF;
+/*    border: 1px solid #62FFF3;*/
+}
+.noBtn:disabled {
+    color: #6C6E72;
+/*    border: 1px solid rgba(255,255,255,0.12);*/
+}
+
+.lineEditOpenDir {
+    border-image: url(:/openDir.png);
+}
+.lineEditOpenDir:hover {
+    border-image: url(:/openDirHover.png);
+}
+.lineEditOpenDir:pressed {
+    border-image: url(:/openDirPressed.png);
+}
+.lineEditOpenDir:disabled {
+    border-image: url(:/openDirDisabled.png);
+}
+
+QLineEdit {
+    color: #676767;
+    border-radius: 4px;
+    border: 1px solid #636466;
+    background: transparent;
+    padding-left: 10px;
+}
+QLineEdit[text=""] {
+    color: rgba(255,255,255,0.3);
+}
+QLineEdit:hover, QLineEdit:focus {
+    border: 1px solid #137DD3;
+}
+
+QScrollBar:vertical {
+    width: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:vertical {
+    border-radius: 2px;
+    background: rgba(255,255,255,0.3);
+}
+QScrollBar:handle:vertical:hover {
+
+}
+QScrollBar:handle:vertical:pressed {
+
+}
+QScrollBar::add-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+
+MsgBox #headWidget {
+background: #33353A;
+border-top-right-radius:8px;
+border-top-left-radius:8px;
+border-bottom: 1px solid #4C4D4F;
+}
+MsgBox #bottomWidget,MsgBox #bodyWidget{
+background: #2C2D31;
+}
+MsgBox #bottomWidget{
+border-bottom-right-radius:8px;
+border-bottom-left-radius:8px;
+}
+MsgBox #title {
+    color: #E5EAF3;
+    font-weight: bold;
+}
+MsgBox #titleIcon {
+border-image: url(:/titleIcon.png);
+}
+
+/* 安装 */
+#logoWid {
+    border-image: url(:/logo.png);
+}
+
+#frame {
+    border-image: url(:/status/load/mainlogo.png);
+}
+
+#bgWid {
+/*    background: qlineargradient(spread:pad, y1:1, y2:0, stop:0 #111218, stop:1 rgba(23, 25, 33, 0.3));*/
+    border-image: url(:/background.png);
+/*    border-radius: 24px;*/
+}
+.buttonColor{
+    background: #137DD3;
+}
+.buttonColor:hover {
+    background: #33A4FF;
+}
+.buttonColor:focus {
+    background: #004EA2;
+}
+.buttonColor:disabled {
+    background: #003661;
+    color: #6C6E72;
+}
+#install {
+    border-radius: 20px;
+    font-size: 16px;
+    color: #E5EAF3;
+/*    background: #137DD3;*/
+}
+
+#changePath {
+    color: #CFD3DC;
+}
+#license {
+    color: #CFD3DC;
+}
+#license:hover {
+    color: #409EFF;
+}
+#license:pressed {
+    color: #66B1FF;
+}
+#license:disabled {
+    color: #6C6E72;
+}
+#path {
+    color: #CFD3DC;
+    padding-right: 32px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 12px;
+}
+
+/*
+#ingText {
+    font-size: 20px;
+    color: rgba(255,255,255,0.65);
+}*/
+#ingText_2 {
+    margin-top: 13px;
+    font-size: 16px;
+    color: #CFD3DC;
+}
+#progressBar {
+    border-radius: 4px;
+/*    background: rgba(255,255,255,0.3);*/
+    background: #414243;
+}
+#progressBar::chunk {
+    border-radius: 4px;
+/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255,255,255,1), stop:1 #FFFFFF);*/
+    background: #8D9095;
+}
+#run {
+    border-radius: 20px;
+/*    background: #137DD3;*/
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#licenseBack {
+    border-radius: 16px;
+    padding-left: 34px;
+    padding-right: 34px;
+/*    border: 1px solid #137DD3;*/
+/*    background: #137DD3;*/
+    color: #FFFFFF;
+}
+
+/*#licenseBack:disabled {
+    background: #003661;
+}*/
+#licenseBack:disabled {
+    color: rgba(255,255,255,0.3);
+/*    border: 1px solid rgba(19,125,211,1);*/
+}
+
+.afterText {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+#textBrowser {
+    background: rgba(255,255,255,0.08);
+
+    padding-left: 12px;
+    border-radius: 8px;
+    line-height: 22px;
+}
+
+
