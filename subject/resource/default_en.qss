@@ -1,0 +1,52 @@
+﻿/* 从登录界面开始英语化 */
+Login #label {
+    width: 199px;
+}
+Login #wx {
+    width: 178px;
+    qproperty-icon: url(:/os.png);
+}
+
+Login #wxCode {
+    border-image: url(:/wxCode_os.png);
+}
+
+Login #en_label1, Login #en_label2 {
+ font-size: 20px;
+ color: #E5EAF3;
+}
+
+Login #en_link {
+ font-size: 20px;
+ color: #409EFF;
+ border: 0px;
+}
+Login #en_link:hover {
+    color: #409EFF;
+    text-decoration: underline;
+}
+Login #en_link:pressed {
+    color: #66B1FF;
+    text-decoration: underline;
+}
+Login #en_link:disabled {
+    color: #6C6E72;
+}
+
+/* 主界面 */
+MainWindow #rechargeWid > #recharge {
+    width: 120px;
+}
+MainWindow #vipTipMore {
+    width: 211px;
+}
+/* 云渲染设置 */
+RenderSet #warnTime {
+    width: 220px;
+}
+
+/* 新手引导 */
+FirstRun #nextBtn {
+   padding-left: 12px;
+   padding-right: 12px;
+}

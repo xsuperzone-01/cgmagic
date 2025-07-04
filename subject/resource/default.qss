@@ -1,0 +1,2291 @@
+﻿/* 公共 */
+QWidget {
+    font-size: 14px;
+    color: #E5EAF3;
+    outline: none;
+    background: transparent;
+}
+
+QPushButton {
+    background: transparent;
+}
+
+QCheckBox::indicator, QTableView::indicator {
+    width: 16px;
+    height: 16px;
+}
+QCheckBox::indicator {
+    margin-right: 2px;
+}
+QCheckBox::indicator:unchecked, QTableView::indicator:unchecked{border-image: url(:/uncheck.png);}
+QCheckBox::indicator:unchecked:hover, QTableView::indicator:unchecked:hover{border-image: url(:/uncheckHover.png);color:#E5EAF3;}
+QCheckBox::indicator:unchecked:pressed, QTableView::indicator:unchecked:pressed{border-image: url(:/uncheckHover.png);color:#E5EAF3;}
+QCheckBox::indicator:unchecked:disabled, QTableView::indicator:unchecked:disabled{border-image: url(:uncheckDisabled.png);color:#E5EAF3;}
+QCheckBox::indicator:checked, QTableView::indicator:checked{border-image: url(:/check.png);color:#E5EAF3;}
+QCheckBox::indicator:checked:hover, QTableView::indicator:checked:hover{border-image: url(:/check.png);color:#E5EAF3;}
+QCheckBox::indicator:checked:pressed, QTableView::indicator:checked:pressed{border-image: url(:/check.png);color:#E5EAF3;}
+QCheckBox::indicator:checked:disabled, QTableView::indicator:checked:disabled{border-image: url(:/checkDisabled.png);color:#CFD3DC;}
+
+QCheckBox::unchecked{color:#CFD3DC;}
+QCheckBox::unchecked:hover{color:#E5EAF3;}
+QCheckBox::unchecked:pressed{color:#E5EAF3;}
+QCheckBox::unchecked:disabled{color:#6C6E72;}
+QCheckBox::checked{color:#E5EAF3;}
+QCheckBox::checked:hover{color:#E5EAF3;}
+QCheckBox::checked:pressed{color:#E5EAF3;}
+QCheckBox::checked:disabled{color:#6C6E72;}
+
+QRadioButton::unchecked{color:#CFD3DC;}
+QRadioButton::unchecked:hover{color:#E5EAF3;}
+QRadioButton::unchecked:pressed{color:#E5EAF3;}
+QRadioButton::unchecked:disabled{color:#6C6E72;}
+QRadioButton::checked{color:#E5EAF3;}
+QRadioButton::checked:hover{color:#E5EAF3;}
+QRadioButton::checked:pressed{color:#E5EAF3;}
+QRadioButton::checked:disabled{color:#6C6E72;}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+QRadioButton::indicator:unchecked{border-image: url(:/unradio.png);color:#CFD3DC;}
+QRadioButton::indicator:unchecked:hover, QRadioButton::indicator:unchecked[tab="1"]{border-image: url(:/unradioHover.png);color:#E5EAF3;}
+QRadioButton::indicator:unchecked:pressed{border-image: url(:/unradioHover.png);color:#E5EAF3;}
+QRadioButton::indicator:unchecked:disabled{border-image: url(:unradioDisabled.png);color:#E5EAF3;}
+QRadioButton::indicator:checked{border-image: url(:/radio.png);color:#E5EAF3;}
+QRadioButton::indicator:checked:hover, QRadioButton::indicator:checked[tab="1"]{border-image: url(:/radio.png);color:#E5EAF3;}
+QRadioButton::indicator:checked:pressed{border-image: url(:/radio.png);color:#E5EAF3;}
+QRadioButton::indicator:checked:disabled{border-image: url(:/radioDisabled.png);color:#CFD3DC;}
+
+QCheckBox, QRadioButton {
+    color: rgba(255,255,255,0.65);
+}
+QCheckBox:disabled, QRadioButton:disabled {
+    color: rgba(255,255,255,0.3);
+}
+
+QScrollBar:vertical {
+    width: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:vertical {
+    border-radius: 2px;
+    background: #4C4D4F;
+}
+QScrollBar:handle:vertical:hover {
+    background: #6B6D71;
+}
+QScrollBar:handle:vertical:pressed {
+    background: #8D9095;
+}
+QScrollBar::add-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+
+QScrollBar:horizontal {
+    height: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:horizontal {
+    border-radius: 2px;
+    background: #4C4D4F;
+}
+QScrollBar:handle:horizontal:hover {
+    background: #6B6D71;
+}
+QScrollBar:handle:horizontal:pressed {
+    background: #8D9095;
+}
+QScrollBar::add-line:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:horizontal {
+    background:rgba(0,0,0,0%);
+}
+
+QLineEdit {
+    border-radius: 2px;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding-left: 10px;
+}
+
+.lineEditUser[userId=user] {
+    image: url(:/user.png);
+}
+.lineEditUser[userId=phone] {
+    image: url(:/phone.png);
+}
+.lineEditUser[userId=email] {
+    image: url(:/email.png);
+}
+
+.lineEditPwdBtn {
+    image: url(:/pwdHide.png);
+}
+.lineEditPwdBtn[show=true] {
+    image: url(:/pwdShow.png);
+}
+
+.lineEditCopyBtn {
+    image: url(:/copy.png);
+}
+.lineEditCopyBtn:hover {
+    image: url(:/copyHover.png);
+}
+.lineEditCopyBtn:pressed {
+    image: url(:/copyPressed.png);
+}
+.lineEditCopyBtn:disabled {
+    image: url(:/copyDisabled.png);
+}
+
+.lineEditlabel {
+/*    border: 1px solid red;*/
+    font-size: 12px;
+    color: #33A3FF;
+    padding-left: 16px;
+}
+.lineEditlabel[focusOutNoText=false] {
+    color: #A3A6AD;
+}
+
+
+.min {
+    border-image: url(:/min.png);
+}
+.min:hover {
+    border-image: url(:/minHover.png);
+}
+.min:pressed {
+    border-image: url(:/minPressed.png);
+}
+.min:disabled {
+    border-image: url(:/minDisabled.png);
+}
+.max {
+    border-image: url(:/max.png);
+}
+.max:hover {
+    border-image: url(:/maxHover.png);
+}
+.max:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.max[maximize="maxmax"] {
+    border-image: url(:/max.png);
+}
+.max[maximize="maxmax"]:hover {
+    border-image: url(:/maxHover.png);
+}
+.max[maximize="maxmax"]:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max[maximize="maxmax"]:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.max[maximize="maxmin"] {
+    border-image: url(:/maxmin.png);
+}
+.max[maximize="maxmin"]:hover {
+    border-image: url(:/maxminHover.png);
+}
+.max[maximize="maxmin"]:pressed {
+    border-image: url(:/maxminPressed.png);
+}
+.max[maximize="maxmin"]:disabled {
+    border-image: url(:/maxminDisabled.png);
+}
+.close {
+    border-image: url(:/close.png);
+}
+.close:hover {
+    border-image: url(:/closeHover.png);
+}
+.close:pressed {
+    border-image: url(:/closePressed.png);
+}
+.close:disabled {
+    border-image: url(:/closeDisabled.png);
+}
+
+.okBtn {
+    border: none;
+    background: #137DD3;
+    color: #E5EAF3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.okBtn:hover {
+    background: #33A3FF;
+
+}
+.okBtn:pressed {
+    background: #004EA2;
+}
+.okBtn:disabled {
+    background: #003661;
+    color: #6C6E72;
+}
+
+.noBtn {
+    background: rgba(255,255,255,0.1);
+    color: #E5EAF3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.noBtn:hover {
+    color: #409EFF;
+}
+.noBtn:pressed {
+    color: #66B1FF;
+}
+.noBtn:disabled {
+    color: #6C6E72;
+}
+
+.leftSelect[tab="0"] {
+    background: transparent;
+}
+.leftSelect[tab="1"] {
+    background: #33A4FF;
+    border-radius: 2px;
+}
+
+FirstRun #nextBtn {
+    border-image: url(":/nextbtn.png");
+    color: #FFFFFF;
+    font-size: 12px;
+    min-width: 60px;
+}
+FirstRun #nextBtn:hover {
+    border-image: url(":/nextbtnHover.png");
+}
+FirstRun #nextBtn:pressed {
+    border-image: url(":/nextbtnPressed.png");
+}
+FirstRun #nextBtn:disabled {
+    border-image: url(":/nextbtnDisabled.png");
+    color: #6C6E72;
+}
+
+FirstRun #nextBtn[type="true"] {
+    border-image: url(":/startbtn.png");
+    color: #FFFFFF;
+    font-size: 12px;
+}
+FirstRun #nextBtn[type="true"]:hover {
+    border-image: url(":/startbtnHover.png");
+}
+FirstRun #nextBtn[type="true"]:pressed {
+    border-image: url(":/startbtnPressed.png");
+}
+FirstRun #nextBtn[type="true"]:disabled {
+    border-image: url(":/startbtnDisabled.png");
+    color: #6C6E72;
+}
+FirstRun #finishBtn{
+    color: #409EFF;
+    text-align: left bottom;
+    font-size: 12px;
+}
+FirstRun #finishBtn:hover{
+    color: #409EFF;
+    text-decoration: underline;
+}
+FirstRun #finishBtn:pressed{
+    color:#66B1FF;
+    text-decoration: underline;
+}
+FirstRun #imgWidget{
+    background: #2C2D31;
+    border-radius: 4px;
+}
+FirstRun #paintWidget{
+    background: transparent;
+}
+FirstRun #title{
+    font-weight: bold;
+}
+FirstRun #content{
+    color: #CFD3DC;
+    font-size: 12px;
+    line-height:20px;
+/*    border: 1px solid #fff;*/
+}
+
+QHeaderView {
+    background: rgba(255, 255, 255, 0.06);
+/*    border-bottom: 1px solid rgba(238,238,238,0.1);*/
+    qproperty-defaultAlignment: AlignLeft;
+    /*margin: 16px 0px 12px 0px;*/     /*之前布局影响*/
+    border-radius:8px;
+}
+/* 若不加属性过滤，会影响垂直header的总高度 */
+QHeaderView[horizontal=true] {
+    min-height: 48px;
+    max-height: 48px;
+    border-radius: 8px;
+}
+QHeaderView::section {
+    color: #CFD3DC;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #A3A6AD;
+/*    border-right: 1px solid #A3A6AD;*/
+    margin: 10px 0px 8px 0px;
+    text-align: left;
+    padding-top:6px;
+    padding-left:10px;
+}
+QHeaderView::section:last {
+/*    border: none;*/
+}
+QHeaderView::section:first {
+    border: none;
+}
+QTableWidget {
+    font-size: 14px;
+    alternate-background-color: rgba(238,238,238,0.04);
+    border-bottom-right-radius: 8px;
+    qproperty-defaultAlignment: AlignLeft;
+    background: transparent;
+}
+QTableWidget QScrollBar:vertical {
+    margin-bottom: 8px;
+    width: 8px;
+}
+QTableWidget QScrollBar:handle:vertical {
+    margin-right: 4px;
+}
+QTableWidget QScrollBar:horizontal {
+    margin-right: 8px;
+    height: 8px;
+}
+QTableWidget QScrollBar:handle:horizontal {
+    margin-bottom: 4px;
+}
+QTableWidget::item {
+    color: #CFD3DC;
+}
+QTableWidget::item:selected {
+    background-color: rgba(19,125,211,0.1);
+}
+
+QListWidget {
+    background: rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 14px;
+}
+QListWidget::item {
+    height: 32px;
+    border-radius: 2px;
+    background: transparent;
+    color: #CFD3DC;
+}
+QListWidget::item:hover {
+    height: 32px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #E5EAF3;
+}
+QListWidget::item:selected {
+    color: #33A3FF;
+    background: rgba(51, 163, 255, 0.10);
+}
+
+QProgressBar {
+    border-radius: 3px;
+    background: rgba(255,255,255,0.1);
+}
+QProgressBar::chunk {
+    border-radius: 3px;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #409EFF, stop:1 #00D8C8);
+}
+
+QTextBrowser {
+    border: none;
+}
+
+QWidget[borderRadius16=true] {
+    border-radius: 16px;
+}
+
+/* 登录 */
+Login #bgWid {
+    border-radius: 32px;
+/*    background: qlineargradient(spread:pad, x1:1, x2:0, stop:0 #11131A, stop:1 rgba(255, 255, 255, 0));*/
+    border-image: url(:/loginBackground.png);
+    background: #11131A;
+}
+.loginShadowBackground {
+    background: #11131A;
+    border-radius: 32px;
+}
+Login #logo {
+    border-image: url(:/logo.png);
+}
+Login #label {
+    width: 136px;
+}
+.buttonColor{
+    background: #137DD3;
+}
+.buttonColor:hover {
+    background: #33A4FF;
+}
+.buttonColor:focus {
+    background: #004EA2;
+}
+.buttonColor:disabled {
+    background: #003661;
+}
+
+.textColor {
+    color: #CFD3DC;
+}
+.textColor:hover {
+    color: #409EFF;
+}
+.textColor:pressed {
+    color: #66B1FF;
+}
+.textColor:disabled {
+    color: #6C6E72;
+}
+
+/*适配主界面的遮罩*/
+.backgroundMask, .backgroundMask[tab="1"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+.backgroundMask[tab="0"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+Login #label_2 {
+    font-size: 12px;
+    color: #A3A6AD;
+}
+Login #label_2:disabled {
+    color: #414243;
+}
+Login #label_2[type="0"] {
+    color: #137DD3;
+}
+Login #label_2[type="1"] {
+    color: #A3A6AD;
+}
+Login #phoneArea {
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.08);
+    padding-left: 15px;
+    font-size: 16px;
+    padding-top: 0px;
+}
+Login #phoneArea:hover {
+    border: 2px solid #137DD3;
+}
+Login #phoneArea:focus {
+    border: 2px solid #33A3FF;
+    padding-top: 20px;
+}
+Login #phoneArea:disabled {
+    border: 2px solid #414243;
+}
+
+Login #comboBox {
+    background: transparent;
+    border: transparent;
+    color: #E5EAF3;
+    border-radius:2px;
+    padding-left: 0px;
+}
+Login #comboBox QScrollBar:vertical{
+    width: 6px;
+}
+Login #comboBox QScrollBar:handle:vertical {
+    margin-right: 2px;
+}
+Login #comboBox QAbstractItemView {
+
+    padding: 2px;
+
+}
+Login #comboBox::drop-down {
+    border:0px;
+}
+/*
+Login #comboBox::down-arrow {
+    border-image: url(:/combodown.png);
+}
+Login #comboBox::down-arrow:on {
+    border-image: url(:/comboup.png);
+}
+Login #comboBox QAbstractItemView {
+    background: #2C2D31;
+    border-radius: 4px;
+    outline: none;
+    color: #CFD3DC;
+}
+
+Login #comboBox QAbstractItemView::item {
+    border-radius: 2px;
+    background: transparent;
+    height: 22px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #CFD3DC;
+}
+Login #comboBox QAbstractItemView::item:selected {
+    background: rgba(255, 255, 255, 0.06);
+    color: #E5EAF3;
+}
+
+Login #comboBox QAbstractItemView::item:hover {
+    color: #E5EAF3;
+    background: rgba(255, 255, 255, 0.06);
+}
+*/
+
+Login #loginBtn {
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+Login #bottomlogo {
+    border-image: url(:/bottomlogo.png);
+}
+Login #logoCode {
+    border-image: url(:/bottomlogo.png);
+}
+
+Login QLineEdit {
+    color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.08);
+    padding-left: 15px;
+    font-size: 16px;
+    padding-top: 0px;
+}
+Login QLineEdit[text= ""] {
+    color: #8D9095;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding-top: 0px;
+}
+Login QLineEdit:hover {
+    border: 2px solid #137DD3;
+}
+Login QLineEdit:focus {
+    border: 2px solid #33A3FF;
+    padding-top: 20px;
+}
+Login QLineEdit[haveNoText=ture] {
+    padding-top: 0px;
+    border: 2px solid #FF6C6C;
+}
+Login QLineEdit[haveNoText=false] {
+    padding-top: 20px;
+}
+Login QLineEdit[focusOutNoText=true] {
+    padding-top: 0px;
+    border: 2px solid #FF6C6C;
+
+}
+Login QLineEdit[focusOutNoText=false] {
+/*    border: 2px solid #33A3FF;*/
+/*    border: none;*/
+/*    border: 2px solid #FF6C6C;*/
+    padding-top: 20px;
+}
+Login QLineEdit[TextError=true] {
+    border: 2px solid #FF6C6C;
+    padding-top: 20px;
+}
+Login QLineEdit[TextError=false] {
+    padding-top: 20px;
+}
+
+Login QLineEdit[clear=true] {
+    padding-top: 0px;
+}
+Login QLineEdit[clear=false] {
+    padding-top: 20px;
+}
+/*Login QLineEdit[EchoMode="2"] {
+lineedit-password-character:9829;
+}把密码的原点修改样式失败，案例中改成星号“****” */
+Login QLineEdit:disabled {
+    border: 2px solid #414243;
+}
+.switchLogin {
+    font-size: 16px;
+    color: #CFD3DC;
+}
+.switchLogin[tab="1"] {
+    color: #E5EAF3;
+}
+.switchLogin:hover {
+    color: #E5EAF3;
+}
+.switchLogin:pressed{
+    color: #E5EAF3;
+}
+.switchLogin:disabled {
+    color: #6C6E72;
+}
+.switchLine {
+    background: transparent;
+}
+.switchLine[tab="1"] {
+    background: #37A6FF;
+    border-radius: 2px;
+}
+.updateLine {
+    background: transparent;
+}
+.updateLine[tab="1"] {
+    background: #37A6FF;
+    border-radius: 1px;
+}
+Login #wx {
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    qproperty-iconSize: 24px 24px;
+    qproperty-icon: url(:/wx.png);
+    width: 178px;
+}
+Login #wx:hover {
+    background: rgba(255,255,255,0.2);
+}
+Login #wx:pressed {
+    background: rgba(255,255,255,0.3);
+}
+Login #wx:disabled {
+    background: rgba(255,255,255,0.05);
+}
+Login #wxCode {
+    border-image: url(:/wxCode.png);
+    border-radius: 12px;
+}
+Login #wxCodeText {
+    font-size: 20px;
+}
+Login #wxBack {
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/*Login #forgetBtn {
+    text-align: left;
+}
+Login #registerBtn {
+    text-align: right;
+}*/
+Login #nameTip, Login #pwdTip {
+    border-image: url(:/tipError.png);
+}
+Login #nameErr, Login #pwdErr {
+    font-size: 14px;
+    color: #FF6C6C;
+}
+.loginMac {
+/*    color: #409EFF;*/
+    color: #CFD3DC;
+    padding-left: 1px;
+}
+Login #remPassC, #autoLoginC {
+    color: #E5EAF3;
+}
+Login #Divider {
+    color: rgba(141,144,149,0.18);
+}
+
+.tooltip {
+    background-color: yellow;
+    color: black;
+}
+
+.tooltip:hover {
+    background-color: lightblue;
+}
+/* 主面板 */
+MainWindow #mainwidget {
+/*    background: #0D212B;*/
+/*    background: linear-gradient(227deg, #0D212B 0%, #111213 41%, #111213 59%, #24383A 100%);*/
+/*background: transparent;*/
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #292D3D, stop:1 #212226);
+}
+.mainShadowBackground {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #292D3D, stop:1 #212226);
+    border-radius: 12px;
+}
+MainWindow #mainwidget, MainWindow #headWidget {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+MainWindow #mainwidget {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+MainWindow #vipTipMore {
+    width: 132px;
+    height: 20px;
+}
+MainWindow #stackedWidget {
+
+}
+MainWindow #changeMax {
+    border-bottom-right-radius: 12px;
+/*    background: #123456;*/
+}
+MainWindow #head[type="1"]{
+    border-image: url(:/vip.png);
+}
+MainWindow #head[type="1"]:hover{
+    border-image: url(:/vipHover.png);
+}
+
+MainWindow #head[type="0"]{
+    border-image: url(:/nonVip.png);
+}
+MainWindow #head[type="0"]:hover{
+    border-image: url(:/nonVipHover.png);
+}
+
+MainWindow #head[type="2"]{
+    border-image: url(:/vipOverTime.png);
+}
+MainWindow #head[type="2"]:hover{
+    border-image: url(:/vipOverTimeHover.png);
+}
+
+MainWindow #otherWid > #customer {
+    border-image: url(:/customer.png);
+}
+MainWindow #otherWid > #customer:hover {
+    border-image: url(:/customerHover.png);
+}
+MainWindow #otherWid > #customer:pressed {
+    border-image: url(:/customerPressed.png);
+}
+MainWindow #otherWid > #customer:disabled {
+    border-image: url(:/customerDisabled.png);
+}
+MainWindow #otherWid > #help {
+    border-image: url(:/help.png);
+}
+MainWindow #otherWid > #help:hover {
+    border-image: url(:/helpHover.png);
+}
+MainWindow #otherWid > #help:pressed {
+    border-image: url(:/helpPressed.png);
+}
+MainWindow #otherWid > #help:disabled {
+    border-image: url(:/helpDisabled.png);
+}
+MainWindow #updatePoint {
+    background: #409EFF;
+    border-radius: 2px;
+}
+MainWindow #headset {
+    border-image: url(:/set.png);
+}
+MainWindow #headset:hover {
+    border-image: url(:/setHover.png);
+}
+MainWindow #headset:pressed {
+    border-image: url(:/setPressed.png);
+}
+MainWindow #headset:disabled {
+    border-image: url(:/setDisabled.png);
+}
+MainWindow #otherWid > #line {
+    color: rgba(255,255,255,0.20);
+}
+MainWindow #setMax {
+    border-image: url(:/set.png);
+}
+MainWindow #setMax:hover {
+    border-image: url(:/setHover.png);
+}
+MainWindow #setMax:pressed {
+    border-image: url(:/setPressed.png);
+}
+MainWindow #setMax:disabled {
+    border-image: url(:/setDisabled.png);
+}
+MainWindow #setRen {
+    border-image: url(:/set.png);
+}
+MainWindow #setRen:hover {
+    border-image: url(:/setHover.png);
+}
+MainWindow #setRen:pressed {
+    border-image: url(:/setPressed.png);
+}
+MainWindow #setRen:disabled {
+    border-image: url(:/setDisabled.png);
+}
+MainWindow #label_2, MainWindow #label_3{
+    font-size: 12px;
+    color: #CFD3DC;
+}
+
+MainWindow #person{
+    font-weight: 400;
+    font-size: 12px;
+    color: #CFD3DC;
+    line-height: 20px;
+}
+
+MainWindow #presentLab{
+    border-image: url(:/presentIcon.png);
+}
+
+MainWindow #bannerWid{
+    background-color: #111D2C;
+    border-radius: 4px 4px 4px 4px;
+}
+
+MainWindow #bannerBtn{
+    font-size: 14px;
+    color: #33A3FF;
+    line-height: 22px;
+    border: none;
+    border-bottom: 1px solid #33A3FF;
+}
+
+/* 账号下拉 *//*背景模糊30*/
+Account #backWid {
+    border-radius: 8px;
+    border-image: url(:/accountBg.png);
+}
+Account #widget_10{
+    border-image: url(:/accountBackground.png);
+    border-radius: 8px;
+}
+Account #chargeBtn{
+    color: #66B1FF;
+    border: none;
+    border-bottom: 1px solid #66B1FF;
+}
+Account #vipIcon[Vip="1"]{
+    border-image: url(:/vipIcon.png);
+}
+Account #vipIcon[Vip="2"]{
+    border-image: url(:/nonVipIcon.png);
+}
+Account #name{
+    font-weight: 400;
+    font-size: 20px;
+    color: #E5EAF3;
+    line-height: 28px;
+}
+Account #acWid QLabel {
+    font-size: 12px;
+    color: #FCDCA2;
+}
+Account #ac1 {
+    border-image: url(:/ac1.png);
+}
+Account #ac2 {
+    border-image: url(:/ac2.png);
+}
+Account #ac3 {
+    border-image: url(:/ac3.png);
+}
+Account #ac4 {
+    border-image: url(:/ac4.png);
+}
+Account #line {
+    color: #4C4D4F;
+}
+Account #line_2 {
+    color: #8D9095;
+}
+Account #left {
+    min-width: 40px;
+    border-image: url(:/acLeft.png);
+}
+Account #right {
+    min-width: 40px;
+    border-image: url(:/acRight.png);
+}
+Account #person{
+    font-size: 14px;
+    color: #CFD3DC;
+    line-height: 22px;
+}
+Account #person:hover{
+    color: #409EFF;
+}
+Account #person:pressed{
+    color: #66B1FF;
+}
+
+Account #widget_5, Account #widget_4{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px 8px 8px 8px;
+}
+
+Account #cloudRender, Account #cloudTool{
+    font-weight: 700;
+    font-size: 14px;
+    color: #E5EAF3;
+    line-height: 22px;
+}
+
+Account #cloudToolIcon{
+    border-image:url(:/cloudToolIcon.png);
+}
+
+Account #cloudRenderIcon{
+    border-image:url(:/cloudRenderIcon.png);
+}
+
+Account #label, Account #freeTime, Account #noFreeTime, Account #timesA, Account #timesB{
+    font-weight: 400;
+    font-size: 12px;
+    color: #E5EAF3;
+    line-height: 20px;
+}
+
+Account #cgAuthorizeIcon{
+    border-image:url(:/cgAuthorize.png);
+}
+
+Account #chargeBtn{
+    background-color: #409EFF;
+    font-weight: 400;
+    font-size: 12px;
+    color: #E5EAF3;
+    line-height: 20px;
+    border-radius: 12px;
+}
+
+Account #pluginTime{
+    font-weight: 400;
+    font-size: 12px;
+    color: #3A5F7D;
+    line-height: 20px;
+}
+
+ActivityWidget #activityWindow{
+    background-color: rgba(0,0,0,0.85);
+    border-radius: 8px 8px 8px 8px;
+}
+ActivityWidget #activityLab1, ActivityWidget #activityLab2, ActivityWidget #activityLab3{
+    border-image: url(:/bitIcon.png);
+    border-radius: 2px 2px 2px 2px;
+}
+
+/*云渲染设置*/
+RenderSet #widget, RenderSet #widget_2, RenderSet #widget_3, RenderSet #widget_4, RenderSet #widget_5, RenderSet #widget_6{
+    border-bottom: 1px solid #4C4D4F;
+    margin-right: 20px;
+}
+
+RenderSet #label_3, RenderSet #label_4, RenderSet #label_5, RenderSet #label_6, RenderSet #label_7, RenderSet #label_8, RenderSet #label_9, RenderSet #label_10, RenderSet #label_12, RenderSet #label_13, RenderSet #label_14, RenderSet #label_15, RenderSet #label_16, RenderSet #label_18, RenderSet #label_20, RenderSet #label_25, RenderSet #label_27, RenderSet #label_28, RenderSet #label_30, RenderSet #label_32{
+    font-size: 12px;
+    color: #CFD3DC;
+}
+RenderSet #label, RenderSet #label_2{
+    color: #CFD3DC;
+    font-size: 14px;
+}
+
+RenderSet #widget_10, RenderSet #widget_13, RenderSet #widget_16, RenderSet #widget_18, RenderSet #widget_20, RenderSet #widget_22{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+}
+
+RenderSet #note,RenderSet #note_2,RenderSet #note_3,RenderSet #note_4{
+    border-image: url(:/comboup.png);
+}
+RenderSet #note[type="up"],RenderSet #note_2[type="up"],RenderSet #note_3[type="up"],RenderSet #note_4[type="up"]{
+    border-image: url(:/comboup.png);
+}
+RenderSet #note[type="down"],RenderSet #note_2[type="down"],RenderSet #note_3[type="down"],RenderSet #note_4[type="down"]{
+    border-image: url(:/combodown.png);
+}
+RenderSet #warnTime::up-button,QDoubleSpinBox::up-button,QSpinBox::up-button[type="1"]{
+subcontrol-origin:border;
+subcontrol-position:right;
+image: url(:/plus.png);
+width: 16px;
+height: 16px;
+padding-right: 18px;
+}
+RenderSet #warnTime::up-button:hover[type="1"]{
+image: url(:/plusHover.png);
+}
+RenderSet #warnTime::up-button:pressed[type="1"]{
+image: url(:/plusPressed.png);
+}
+RenderSet #warnTime::up-button:disabled[type="1"]{
+image: url(:/plusDisabled.png);
+}
+RenderSet #warnTime::up-button[type="2"]{
+image: url(:/plusDisabled.png);
+}
+RenderSet #warnTime::down-button,QDoubleSpinBox::down-button,QSpinBox::down-button[type="1"] {
+subcontrol-origin:border;
+subcontrol-position:left;
+image: url(:/minus.png);
+width: 16px;
+height: 16px;
+padding-left: 18px;
+}
+RenderSet #warnTime::down-button:hover[type="1"]{
+image: url(:/minusHover.png);
+}
+RenderSet #warnTime::down-button:pressed[type="1"]{
+image: url(:/minusPressed.png);
+}
+RenderSet #warnTime::down-button:disabled[type="1"]{
+image: url(:/minusDisabled.png);
+}
+RenderSet #warnTime::down-button[type="0"]{
+image: url(:/minusDisabled.png);
+}
+RenderSet #warnTime{
+    border: 1px solid #4C4D4F;
+    border-radius: 2px;
+    background: #2C2D31;
+    width: 262px;
+}
+
+
+
+/* 主界面左侧导航 */
+LeftNavItem #icon[type="1"] {
+    border-image: url(:/leftItem/changeMax.png);
+}
+LeftNavItem #icon[type="2"] {
+    border-image: url(:/leftItem/changeMaterial.png);
+}
+LeftNavItem #icon[type="3"] {
+    border-image: url(:/leftItem/download.png);
+}
+LeftNavItem #icon[type="5"] {
+    border-image: url(:/leftItem/manage.png);
+}
+LeftNavItem #icon[type="6"] {
+    border-image: url(:/leftItem/upload.png);
+}
+LeftNavItem #icon[type="7"] {
+    border-image: url(:/leftItem/download.png);
+}
+
+LeftNavItem #icon[type="9"] {
+    border-image: url(:/leftItem/shopcenter.png);
+}
+
+LeftNavItem #text[tab="0"] {
+    color: #CFD3DC;
+}
+LeftNavItem #text:hover {
+    color: #E5EAF3;
+}
+LeftNavItem #text[tab="1"] {
+    color: #E5EAF3;
+}
+
+LeftNavItem #update {
+    background: #409EFF;
+    border-radius: 3px;
+}
+
+LeftNavItem #widget {
+    border-radius: 3px;
+}
+LeftNavItem #widget[tab="0"] {
+    background: transparent;
+}
+LeftNavItem #widget:hover {
+    background: rgba(255,255,255,0.2);
+}
+LeftNavItem #widget[tab="1"] {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+#setList{
+    background:transparent;
+    color: #CFD3DC;
+    border-radius: 3px;
+}
+#setList LeftNavItem #widget:hover {
+    background: rgba(255, 255, 255, 0.20);
+    color: #E5EAF3;
+}
+#setList LeftNavItem #widget[tab="1"] {
+    background: rgba(255, 255, 255, 0.06);
+}
+#setList LeftNavItem #text[tab="1"] {
+    color: #E5EAF3;
+}
+
+/* 云转模 */
+QHeaderView::section[from="Change"] {
+    padding-left: 9px;
+}
+QTableWidget::item[from="Change"] {
+    padding-left: 5px;
+}
+
+Progress QProgressBar {
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 4px;
+    max-height: 4px;
+    border-radius: 2px;
+}
+Progress QProgressBar[status="ing"] {
+    background: #213D5B;
+}
+Progress QProgressBar[status="err"] {
+    background: #412626;
+}
+Progress QProgressBar[status="succ"] {
+    background: #00B578;
+}
+Progress QProgressBar::chunk {
+    border-radius: 2px;
+}
+Progress QProgressBar::chunk[status="ing"] {
+    background: #409EFF;
+}
+Progress QProgressBar::chunk[status="err"] {
+    background: #F78989;
+}
+Progress QProgressBar::chunk[status="succ"] {
+    background: #00B578;
+}
+Progress #status {
+    font-size: 12px;
+    color: #CFD3DC;
+}
+Progress #point {
+    border-radius: 3px;
+    background: #55E3FF;
+    border: none;
+}
+Progress #point[status="ing"] {
+    background: #55E3FF;
+}
+Progress #point[status="err"] {
+    background: #FF6C6C;
+}
+Progress #point[status="succ"] {
+    background: #00FFA9;
+}
+/* png才有阴影 */
+Change #selectFile {
+    border-image: url(:/selectFile.png);
+}
+Change #selectFile:hover {
+    border-image: url(:/selectFileHover.png);
+}
+Change #selectFile:pressed {
+    border-image: url(:/selectFilePressed.png);
+}
+Change #selectFile:disabled {
+    border-image: url(:/selectFileDisabled.png);
+}
+
+Change #pushButton{
+    background: transparent;
+}
+Change #pushButton:pressed{
+}
+
+/* 云转模选版本 */
+ChooseMaxVersion #widget, MsgBox #widget {
+    border-radius: 8px;
+/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #085763, stop:1 #052E44);*/
+    background: #2C2D31;
+}
+ChooseMaxVersion #widget_5{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+}
+ChooseMaxVersion #label_2, ChooseMaxVersion #label_3, ChooseMaxVersion #label_4, ChooseMaxVersion #label_5, ChooseMaxVersion #label_6{
+    font-size:12px;
+}
+ChooseMaxVersion #forward{
+    border-image: url(:/forward.png);
+}
+ChooseMaxVersion #note{
+    border-image: url(:/comboup.png);
+}
+ChooseMaxVersion #note[type="up"]{
+    border-image: url(:/comboup.png);
+}
+ChooseMaxVersion #note[type="down"]{
+    border-image: url(:/combodown.png);
+}
+ChooseMaxVersion #okBtn, MsgBox #okBtn, ChooseMaxVersion #noBtn, MsgBox #noBtn {
+    border-radius: 4px;
+}
+
+ChooseMaxVersion #toVersion[type="0"] {
+    color: #8D9095
+}
+
+
+
+
+MsgBox #title, ChooseMaxVersion #title {
+    font-weight: bold;
+}
+ChooseMaxVersion #headWidget{
+    background: #33353A;
+    border-bottom: 1px solid #4C4D4F
+}
+MsgBox #widget {
+    border-radius: 8px;
+/*    border: 1px solid #4C4D4F;*/
+}
+MsgBox #headWidget {
+    background: #33353A;
+    color: #E5EAF3;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #4C4D4F;
+}
+MsgBox #bodyWidget {
+    background: #2C2D31;
+    color: #CFD3DC;
+}
+MsgBox #label ,MsgBox #label_2 ,MsgBox #label_3, MsgBox #label_4{
+    color: #CFD3DC;
+    font-size: 14px;
+}
+MsgBox #passwordChange {
+    color: #409EFF;
+    font-size: 14px;
+}
+MsgBox #passwordChange:hover {
+    color: #409EFF;
+    text-decoration: underline;
+}
+MsgBox #passwordChange:pressed {
+    color: #66B1FF;
+    text-decoration: underline;
+}
+MsgBox #passwordChange:disabled {
+    color: #6C6E72;
+}
+
+
+.msgBoxI {
+    border-image: url(:/msgBoxI.png);
+}
+.msgBoxError {
+    border-image: url(:/msgBoxError.png);
+}
+
+Setting #headWid {
+    background: #33353A;
+    border-bottom: 1px solid #4C4D4F;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+Setting #headTitle{
+    color: #CFD3DC;
+    font-weight: bold;
+}
+Setting #bodyWid {
+    background: #2C2D31;
+    color: #CFD3DC;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+Setting #leftList {
+    border-right: 1px solid #4C4D4F;
+}
+
+Setting #cacheDir::drop-down, Setting #lang::drop-down{
+  border:0px;
+}
+
+Setting #cacheDir::down-arrow,Setting #lang::down-arrow {
+  height:16px;
+  width:16px;
+}
+
+QComboBox {
+    background: #2C2D31;
+    border: 1px solid #636466;
+    color: #CFD3DC;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+QComboBox::drop-down {
+    subcontrol-position: right center;
+/*    margin-left:10px;*/
+    width: 32px;
+    height: 32px;
+    border-right: 12px solid transparent;
+}
+QComboBox::down-arrow {
+    border-image: url(:/combodown.png);
+   /* width:12px;
+    height:12px;*/
+}
+QComboBox::down-arrow:on {
+    border-image: url(:/comboup.png);
+}
+QComboBox:on {
+    border: 1px solid #33A3FF;
+    color: #33A3FF
+}
+QComboBox QAbstractItemView {
+    border-radius: 2px;
+    background: #3A3B40;
+    outline: none;
+    padding: 2px 4px 0px 4px;
+    margin-top: 4px;
+}
+QComboBox[itemViewPaddingRight=true] QAbstractItemView {
+    padding-right: 8px;
+}
+QComboBox QAbstractItemView::item {
+    border-radius: 2px;
+    background: transparent;
+    height: 28px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    color: #CFD3DC;
+}
+QComboBox[itemViewPaddingRight=true] QAbstractItemView::item {
+    margin-right: 9px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: rgba(51, 163, 255, 0.10);
+    color: #33A3FF;
+}
+
+/* hover必须在selected之后，否则无效。但是这种效果也不好 */
+QComboBox QAbstractItemView::item:hover {
+    color: #E5EAF3;
+    background: rgba(255,255,255,0.06);
+}
+
+/*QComboBox QAbstractItemView::item:selected {
+    background: rgba(255,255,255,0.06);
+    color: #E5EAF3;
+}
+
+QComboBox QAbstractItemView::item:pressed {
+    background: rgba(51, 163, 255, 0.10);
+    color: #33A3FF;
+}*/
+
+QComboBox:disabled {
+    background: #2C2D31;
+    border: 1px solid #414243;
+    color: #6C6E72;
+}
+
+TransferHand #op {
+    border-image: url(:/op.png);
+}
+TransferHand #op:hover {
+    border-image: url(:/opHover.png);
+}
+TransferHand #op:pressed {
+    border-image: url(:/opPressed.png);
+}
+TransferHand #op::disabled {
+    border-image: url(:/opDisabled.png);
+}
+TransferHand #del[type="1"] {
+    border-image: url(:/del.png);
+}
+TransferHand #del[type="1"]:hover {
+    border-image: url(:/delHover.png);
+}
+TransferHand #del[type="1"]:pressed {
+    border-image: url(:/delPressed.png);
+}
+TransferHand #del[type="0"] {
+    border-image: url(:/delDisabled.png);
+}
+
+QMenu {
+    border-radius: 4px;
+    background: #2C2D31;
+    font-size: 14px;
+    color: #CFD3DC;
+    border: none;
+/*    padding-top: 8px;
+    padding-bottom: 8px;*/
+
+}
+QMenu::item {
+    background: #2C2D31;
+    border-radius: 2px;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+QMenu::item:selected {
+    background: rgba(255, 255, 255, 0.06);
+    color: #E5EAF3;
+}
+QMenu::item:pressed  {
+    background: rgba(19, 125, 211, 0.10);
+    color: #66B1FF;
+}
+QMenu::item:disabled {
+    background: #2C2D31;
+    color: #6C6E72;
+}
+QMenu::separator
+{
+    height: 1px;
+    background-color: #4C4D4F;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* 通用设置 */
+Set #title, MaxSet #title, About #title, UpdateSet #title {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+Set #mac {
+    padding-left: 8px;
+    border-radius: 2px;
+    background: #2C2D31;
+    border: 1px solid #4C4D4F;
+}
+Set #openCacheDir {
+    border-radius: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 12px;
+}
+Set #loginSilent {
+    margin-bottom: 17px;
+}
+Set #langGroup,Set #widget_2,Set #widget_3,Set #widget_6{
+    border-bottom: 1px solid #4C4D4F;
+}
+Set #note{
+    border-image: url(:/comboup.png);
+}
+Set #note[type="up"]{
+    border-image: url(:/comboup.png);
+}
+Set #note[type="down"]{
+    border-image: url(:/combodown.png);
+}
+
+Set #widget ,Set #widget_4{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+}
+Set #label ,Set #label_2 ,Set #label_3,Set #label_4,Set #label_5,Set #label_6,Set #label_7 ,Set #label_9{
+    font-size: 12px;
+    color: #CFD3DC;
+}
+
+Set #copyBtn{
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.10);
+    font-size: 12px;
+    font-weight: 400;
+    color: #E5EAF3;
+    line-height: 20px;
+}
+
+Set #copyBtn:hover{
+    color: #409EFF;
+}
+
+Set #copyBtn:pressed{
+    color: #66B1FF;
+}
+
+/*Set QComboBox QAbstractItemView {
+    padding: 12px 12px 4px 12px;
+}*/
+.lineEditOpenDir {
+    border-image: url(:/openDir.png);
+}
+.lineEditOpenDir:hover {
+    border-image: url(:/openDirHover.png);
+}
+.lineEditOpenDir:pressed {
+    border-image: url(:/openDirPressed.png);
+}
+.lineEditOpenDir:disabled {
+    border-image: url(:/openDirDisabled.png);
+}
+
+MaxSet #widget_2{
+    border-bottom: 1px solid #4C4D4F;
+}
+MaxSet #widget_5{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+}
+MaxSet #label_4, #label_8, #label_9{
+    font-size:12px;
+    color: #CFD3DC;
+}
+MaxSet #note_2{
+    border-image: url(:/comboup.png);
+}
+MaxSet #note_2[type="up"]{
+    border-image: url(:/comboup.png);
+}
+MaxSet #note_2[type="down"]{
+    border-image: url(:/combodown.png);
+}
+
+.i {
+    border-image: url(:/i.svg);
+}
+
+QDoubleSpinBox {
+    background: rgba(0,0,0,0.3);
+    border-radius: 2px;
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+/* 插件设置 */
+
+EnvSet #backEnvset[type="0"] {
+    color:#CFD3DC;
+    font-size: 12px;
+    qproperty-iconSize: 20px 20px;
+    qproperty-icon: url(:/backEnvset.png);
+}
+EnvSet #backEnvset[type="1"] {
+    color:#409EFF;
+    font-size: 12px;
+    qproperty-iconSize: 20px 20px;
+    qproperty-icon: url(:/backEnvsetHover.png);
+}
+EnvSet #backEnvset[type="2"] {
+    color:#66B1FF;
+    font-size: 12px;
+    qproperty-iconSize: 20px 20px;
+    qproperty-icon: url(:/backEnvsetPressed.png);
+}
+EnvSet #checkWid {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin-right: 24px;
+}
+EnvSet #dmax, EnvSet #CustomEn{
+    color: #ffffff;
+}
+EnvSet #Wid,EnvSet #title {
+    font-size: 12px;
+    color: #CFD3DC;
+}
+EnvSet #dmax {
+    text-align: left;
+    font-size: 12px;
+    color: #CFD3DC;
+}
+EnvSet #label, EnvSet #label_2 {
+    font-size: 14px;
+    color: #E5EAF3;
+}
+
+EnvNew QComboBox{
+    background: #2C2D31;
+    border-radius: 3px;
+}
+
+EnvNew QComboBox QAbstractItemView::item:hover{
+    background-color: rgba(51,163,255,0.1);
+    color: #33A3FF;
+}
+
+EnvNew #scrollArea{
+    border: none;
+}
+EnvNew #toR {
+    border-image: url(:/toR.png);
+}
+EnvNew #toR:hover {
+    border-image: url(:/toRHover.png);
+}
+EnvNew #toR:pressed {
+    border-image: url(:/toRPressed.png);
+}
+EnvNew #toR:disabled {
+    border-image: url(:/toRDisabled.png);
+}
+EnvNew #toL {
+    border-image: url(:/toL.png);
+}
+EnvNew #toL:hover {
+    border-image: url(:/toLHover.png);
+}
+EnvNew #toL:pressed {
+    border-image: url(:/toLPressed.png);
+}
+EnvNew #toL:disabled {
+    border-image: url(:/toLDisabled.png);
+}
+EnvNew #label,EnvNew #label_2,EnvNew #label_3,EnvNew #label_4,EnvNew #label_5,EnvNew #label_6 {
+    font-size: 12px;
+    color: #CFD3DC;
+}
+EnvNew #Widget_7, EnvNew #Widget_8{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+}
+EnvNew #listL, EnvNew #listR{
+    background: transparent;
+    color: #CFD3DC;
+}
+EnvNew #Widget_4, EnvNew #Widget_3{
+    border-bottom: 1px solid #4C4D4F;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+EnvNew #del[type="1"] {
+    border-image: url(:/del.png);
+}
+EnvNew #del[type="1"]:hover {
+    border-image: url(:/delHover.png);
+}
+EnvNew #del[type="1"]:pressed {
+    border-image: url(:/delPressed.png);
+}
+EnvNew #del[type="1"]:disabled {
+    border-image: url(:/delDisabled.png);
+}
+EnvNew #del[type="0"] {
+    border-image: url(:/delDisabled.png);
+}
+EnvNew #defaultWid QPushButton {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+EnvBlock #soft{
+    font-size: 12px;
+    color: #CFD3DC;
+    font-weight: bold;
+}
+EnvBlock #mod{
+    border-image: url(:/mod.png);
+}
+EnvBlock #mod:hover{
+    border-image: url(:/modHover.png);
+}
+EnvBlock #mod:pressed{
+    border-image: url(:/modPressed.png);
+}
+EnvBlock #mod:disabled{
+    border-image: url(:/modDisabled.png);
+}
+EnvBlock #del {
+    border-image: url(:/del.png);
+}
+EnvBlock #del:hover {
+    border-image: url(:/delHover.png);
+}
+EnvBlock #del:pressed {
+    border-image: url(:/delPressed.png);
+}
+EnvBlock #del:disabled {
+    border-image: url(:/delDisabled.png);
+}
+
+EnvBlock #widget {
+    border-bottom: 1px solid #4C4D4F;
+}
+EnvBlock #stack {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius:  3px;
+}
+
+EnvBlock #addEnv {
+    color:#CFD3DC;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/set.png);
+}
+/*
+EnvBlock #addEnv:hover {
+    color:#409EFF;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setHover.png);
+}
+EnvBlock #addEnv:pressed {
+    color:#66B1FF;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setPressed.png);
+}
+EnvBlock #addEnv:disabled {
+    color:#6C6E72;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setDisabled.png);
+}
+*/
+EnvBlock #addEnv[type="0"] {
+    color:#CFD3DC;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/set.png);
+}
+EnvBlock #addEnv[type="1"] {
+    color:#409EFF;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setHover.png);
+}
+EnvBlock #addEnv[type="2"] {
+    color:#66B1FF;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setPressed.png);
+}
+EnvBlock #addEnv[type="3"] {
+    color:#6C6E72;
+    font-size: 12px;
+    qproperty-iconSize: 14px 14px;
+    qproperty-icon: url(:/setDisabled.png);
+}
+
+.envBlockPlugin {
+    font-size: 12px;
+    color: #CFD3DC;
+}
+.envBlockPlugin[title=true] {
+    font-size: 10px;
+    color: #8D9095;
+/*    margin-top: 6px;*/
+}
+
+/* 预览 */
+Preview #left {
+    border-image: url(:/previewL.png);
+}
+Preview #left:hover {
+    border-image: url(:/previewLHover.png);
+}
+Preview #left:pressed {
+    border-image: url(:/previewLPressed.png);
+}
+Preview #left:disabled {
+    border-image: url(:/previewLDisabled.png);
+}
+Preview #right {
+    border-image: url(:/previewR.png);
+}
+Preview #right:hover {
+    border-image: url(:/previewRHover.png);
+}
+Preview #right:pressed {
+    border-image: url(:/previewRPressed.png);
+}
+Preview #right:disabled {
+    border-image: url(:/previewRDisabled.png);
+}
+Preview #noView {
+    font-size: 24px;
+    color: rgba(255,255,255,0.45);
+}
+Preview #bgWid {
+    background: rgba(0,0,0,0.85);
+}
+Preview #headMax {
+    border-image: url(:/previewMax.png);
+}
+Preview #title{
+    font-weight: bold;
+}
+
+/* 托盘 */
+LeftNavItem #icon[type="maxLow"] {
+    border-image: url(:/maxLow.png);
+}
+LeftNavItem #icon[type="maxLow"][hover=true] {
+    border-image: url(:/maxLowHover.png);
+}
+LeftNavItem #icon[type="pngLow"] {
+    border-image: url(:/pngLow.png);
+}
+LeftNavItem #icon[type="pngLow"][hover=true] {
+    border-image: url(:/pngLowHover.png);
+}
+LeftNavItem #icon[type="openMax"] {
+    border-image: url(:/openMax.png);
+}
+LeftNavItem #icon[type="openMax"][hover=true] {
+    border-image: url(:/openMaxHover.png);
+}
+LeftNavItem #icon[type="frame"] {
+    border-image: url(:/frame.png);
+}
+LeftNavItem #icon[type="frame"][hover=true] {
+    border-image: url(:/frameHover.png);
+}
+LeftNavItem #icon[type="frameMax"] {
+    border-image: url(:/frameMax.png);
+}
+LeftNavItem #icon[type="frameVray"] {
+    border-image: url(:/frameVray.png);
+}
+LeftNavItem #icon[type="frameCorona"] {
+    border-image: url(:/frameCorona.png);
+}
+LeftNavItem #icon[type="autoRun"] {
+    border-image: url(:/autoRun.png);
+}
+LeftNavItem #icon[type="autoRun"][hover=true] {
+    border-image: url(:/autoRunHover.png);
+}
+LeftNavItem #icon[type="relogin"] {
+    border-image: url(:/relogin.png);
+}
+LeftNavItem #icon[type="relogin"][hover=true] {
+    border-image: url(:/reloginHover.png);
+}
+LeftNavItem #icon[type="quit"] {
+    border-image: url(:/quit.png);
+}
+LeftNavItem #icon[type="quit"][hover=true] {
+    border-image: url(:/quitHover.png);
+}
+
+LeftNavItem #text:disabled {
+    color: rgba(255,255,255,0.3);
+}
+.trayMenu {
+    background: #111319;
+    margin-left: 16px;
+}
+.trayMenu LeftNavItem {
+    min-height: 48px;
+    max-height: 48px;
+}
+.trayMenu LeftNavItem #widget {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.trayMenu LeftNavItem #widget:hover {
+    background: rgba(19, 125, 211, 0.10);
+}
+.trayMenu LeftNavItem #widget[hover=false] {
+    background: transparent;
+}
+.trayMenu LeftNavItem #widget[tab="1"] {
+    background: rgba(19, 125, 211, 0.10);
+}
+.trayMenu LeftNavItem #text {
+    padding-left: 8px;
+    color: #CFD3DC;
+}
+.trayMenu LeftNavItem #text[hover=true]:!disabled {
+    color: #33A3FF;
+}
+.trayMenu LeftNavItem #text[tab="0"][hover=true] {
+    color: #33A3FF;
+}
+.trayMenu LeftNavItem #text[tab="1"] {
+/*    color: #CFD3DC;*/
+    color: #33A3FF;
+}
+.trayMenu LeftNavItem #down[type="up"], .trayMenu LeftNavItem #down[type="down"] {
+    border-image: url(:/subMenu.png);
+}
+.trayMenu LeftNavItem #down[selected=true] {
+    border-image: url(:/menuSelected.png);
+}
+.trayMenu LeftNavItem #down[selected=false] {
+    border-image: none;
+}
+.trayMenuSeparator {
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+TraySetAccount {
+    min-height: 72px;
+    max-height: 72px;
+}
+TraySetAccount #backWid{
+    background: #111319;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+TraySetAccount #head {
+    border-image: url(:/trayHead.png);
+}
+TraySetAccount #moneyWid QLabel {
+    font-size: 12px;
+    color: rgba(255,255,255,0.65);
+}
+
+/* 关于 */
+About #logo {
+    border-image: url(:/aboutLogo.png);
+}
+About #account{
+    border-image: url(:/aboutWx.png);
+}
+About #name {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+About #line {
+    color: #4C4D4F;
+}
+About #label {
+    font-size: 12px;
+    color: #CFD3DC;
+}
+About #label_4, About #wxUrl, About #label_5, About #wxUrl_2, About #label_3, About #docUrl, About #label_2, About #mainUrl, About #copyright, About #copyrightEn, About #version{
+    color: #CFD3DC;
+}
+About #label_2, About #label_3, About #label_4, About #label_5{
+    font-size: 14px;
+}
+
+About #mainUrl, About #docUrl {
+    color: #409EFF;
+}
+About #mainUrl:hover, About #docUrl:hover {
+    color: #409EFF;
+/*    border-bottom: 1px solid #409EFF;*/
+    text-decoration: underline;
+}
+About #mainUrl:pressed, About #docUrl:pressed {
+    color: #66B1FF;
+    text-decoration: underline;
+}
+About #mainUrl:disabled, About #docUrl:disabled {
+    color: #6C6E72;
+}
+
+/* 检测更新 */
+UpdateSet #logo {
+    border-image: url(:/bottomlogo.png);
+}
+UpdateSet #name {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+UpdateSet #title {
+    font-size: 12px;
+    color: #CFD3DC;
+    font-weight: bold;
+}
+UpdateSet #line {
+    color: rgba(255,255,255,0.12);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+UpdateSet #module,UpdateSet #updateAll,UpdateSet #client,UpdateContent #label_5,UpdateContent #label_7 {
+    font-size: 12px;
+}
+UpdateSet #logo_2 {
+    border-image: url(:/bottomlogo.png);
+}
+UpdateSet #logo_3 {
+    border-image: url(:/pluginIcon.png);
+}
+UpdateContent #label_8{
+    font-weight: 400;
+    font-size: 14px;
+    color: #CFD3DC;
+}
+
+UpdateSet #ScorllArea {
+    border: none;
+}
+UpdateItem #version {
+    font-size: 20px;
+}
+UpdateItem #install {
+    border-radius: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+UpdateContent #label_6 {
+    border-image: url(:/forward.png);
+}
+UpdateContent #up {
+    border-image: url(:/comboup.png);
+}
+UpdateContent #up[type="up"]{
+    border-image: url(:/comboup.png);
+}
+UpdateContent #up[type="down"]{
+    border-image: url(:/combodown.png);
+}
+UpdateContent #horizontalWidget_2 {
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 2px;
+}
+UpdateContent #update {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 4px;
+}
+UpdateContent #update {
+    background: rgba(255,255,255,0.1);
+    color: #E5EAF3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+UpdateContent #update:hover {
+    color: #409EFF;
+}
+UpdateContent #update:pressed {
+    color: #66B1FF;
+}
+UpdateContent #update:disabled {
+    color: #E5EAF3;
+}
+UpdateContent #backWid {
+    border-bottom: 1px solid #4C4D4F;
+}
+UpdateContent #backWid[type="1"]{
+    border-bottom: 1px solid transparent;
+}
+UpdateContent #label_3, UpdateContent #detail{
+    font-size: 12px;
+    color: #CFD3DC;
+}
+
+/*.ContentTable {
+    border-bottom: 1px solid #4C4D4F;
+}*/
+/* 更新弹框 */
+SoftwareUpdate #bgWid {
+/*    background: qlineargradient(spread:pad, y1:1, y2:0, stop:0 #111218, stop:1 rgba(23, 25, 33, 0.3));*/
+    border-image:url(:/background.png);
+    border-radius: 24px;
+    background: #111218;
+}
+SoftwareUpdate #logo {
+    border-image: url(:/logo.png);
+}
+SoftwareUpdate #okBtn, SoftwareUpdate #noBtn {
+    border-radius: 16px;
+}
+SoftwareUpdate #title {
+    font-size: 20px;
+    font-weight: bold;
+}
+SoftwareUpdate #tipWid {
+    font-size: 14px;
+}
+SoftwareUpdate #label {
+    color: #CFD3DC;
+    font-weight: bold;
+/*    padding-left: 12px;*/
+}
+SoftwareUpdate #widget_8 {
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+}
+SoftwareUpdate #TextBrowser {
+/*    padding-left: 12px;*/
+    color: #CFD3DC;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+SoftwareUpdate #version {
+    color: #A3A6AD;
+}
+SoftwareUpdate #progressBar {
+    border-radius: 4px;
+    background: #414243;
+}
+SoftwareUpdate #progressBar::chunk {
+    border-radius: 4px;
+/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255,255,255,1), stop:1 #FFFFFF);*/
+    background: #8D9095;
+}
+SoftwareUpdate #mainLab{
+    border-image: url(:/aboutLogo.png);
+}
+SoftwareUpdate #error{
+    font-size: 16px;
+}
+/* table缺省页 */
+.tableDefault {
+    border-image: url(:/default.png);
+}
+.tableDefaultText {
+    color: #8D9095;
+    font-size: 20px;
+}
+
+/* 顶部提示 */
+.topMessage {
+    border-radius: 4px;
+}
+.topMessage > #text {
+    font-size: 14px;
+    color: #CFD3DC;
+}
+.topMessage[type="0"] {
+    background: #162312;
+    border: 1px solid #274916;
+}
+.topMessage[type="0"] > #icon {
+    border-image: url(:/messageSuccess.png);
+}
+.topMessage[type="0"] > #close {
+    border-image: url(:/closeSuccess.png);
+}
+.topMessage[type="1"] {
+    background: #2B2111;
+    border: 1px solid #594214;
+}
+.topMessage[type="1"] > #icon {
+    border-image: url(:/messageWarning.png);
+}
+.topMessage[type="1"] > #close {
+    border-image: url(:/closeWarning.png);
+}
+.topMessage[type="2"] {
+    background: #111D2C;
+    border: 1px solid #15395B;
+}
+.topMessage[type="2"] > #icon {
+    border-image: url(:/messageInfo.png);
+}
+.topMessage[type="2"] > #close {
+    border-image: url(:/closeInfo.png);
+}
+.topMessage[type="3"] {
+    background: #2A1215;
+    border: 1px solid #58181C;
+}
+.topMessage[type="3"] > #icon {
+    border-image: url(:/messageError.png);
+}
+.topMessage[type="3"] > #close {
+    border-image: url(:/closeError.png);
+}
+
+NoticeWidget #titleNameLab{
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+}
+
+NoticeWidget #closeBtn{
+    background-color: transparent;
+    border-image: url(:/closeBtn.png);
+}
+
+NoticeWidget #closeBtn:hover{
+    background-color: transparent;
+    border-image: url(:/closeBtn_hover.png);
+}
+
+NoticeWidget #closeBtn:pressed{
+    background-color: transparent;
+    border-image: url(:/closeBtn_pressed.png);
+}
+
+NoticeWidget #titlePage{
+    background-color: #FFFFFF;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+
+NoticeWidget #noticeWindow, NoticeWidget #NoticeWidget{
+    border-radius: 8px;
+}
+
+NoticeWidget #webPage{
+    background-color: #FFFFFF;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+
+Transfer #delBatchBtn{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 4px 4px 4px 4px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #E5EAF3;
+}
+
+Transfer #delBatchBtn:hover{
+    color: #409EFF;
+}
+
+Transfer #delBatchBtn:pressed{
+    color: #66B1FF;;
+}
+
+DownloadMaxWidget #tableWidget, DownloadMaxWidget #tableView{
+    background-color: transparent;
+    border: none;
+}
+
+DownloadMaxWidget #pageShowLab{
+    background-color: #252730;
+    font-weight: 400;
+    font-size: 14px;
+    color: #CFD3DC;
+    line-height: 22px;
+}
+
+DownloadMaxWidget #searchButton, DownloadMaxWidget #prvBtn, DownloadMaxWidget #nextBtn, DownloadMaxWidget #jumpBtn{
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 22px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+DownloadMaxWidget #searchButton:hover, DownloadMaxWidget #prvBtn:hover, DownloadMaxWidget #nextBtn:hover, DownloadMaxWidget #jumpBtn:hover{
+    background-color: #33A4FF;
+}
