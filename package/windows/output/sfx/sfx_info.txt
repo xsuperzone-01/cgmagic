@@ -1,0 +1,4 @@
+Setup=install.exe 
+TempMode
+Silent=1 
+Overwrite=1
