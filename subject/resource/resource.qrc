@@ -1,0 +1,410 @@
+<RCC>
+    <qresource prefix="/">
+        <file>language/en_us.qm</file>
+        <file>language/zh_cn.qm</file>
+        <file>close.png</file>
+        <file>min.png</file>
+        <file>logo.png</file>
+        <file>partialCheck.png</file>
+        <file>wclose.png</file>
+        <file>arrowDh.png</file>
+        <file>loading.png</file>
+        <file>arrowRB.png</file>
+        <file>nodeShadow.png</file>
+        <file>default.qss</file>
+        <file>wxCode.png</file>
+        <file>headVip.png</file>
+        <file>selectFile.png</file>
+        <file>selectFilePressed.png</file>
+        <file>selectFileHover.png</file>
+        <file>i.svg</file>
+        <file>third/Xcgmagic/offline.ico</file>
+        <file>third/Xcgmagic/online.ico</file>
+        <file>third/Xcgmagic/startLogo.png</file>
+        <file>toL.png</file>
+        <file>toR.png</file>
+        <file>previewL.png</file>
+        <file>previewR.png</file>
+        <file>relogin.png</file>
+        <file>frame.png</file>
+        <file>autoRun.png</file>
+        <file>quit.png</file>
+        <file>subMenu.png</file>
+        <file>menuSelected.png</file>
+        <file>quitHover.png</file>
+        <file>openMaxHover.png</file>
+        <file>openMax.png</file>
+        <file>pngLowHover.png</file>
+        <file>pngLow.png</file>
+        <file>maxLowHover.png</file>
+        <file>maxLow.png</file>
+        <file>frameHover.png</file>
+        <file>autoRunHover.png</file>
+        <file>reloginHover.png</file>
+        <file>frameCorona.png</file>
+        <file>frameVray.png</file>
+        <file>frameMax.png</file>
+        <file>trayHead.png</file>
+        <file>aboutLogo.png</file>
+        <file>msgBoxI.png</file>
+        <file>head.png</file>
+        <file>headMain.png</file>
+        <file>default.png</file>
+        <file>bottomlogo.png</file>
+        <file>wx.png</file>
+        <file>tipError.png</file>
+        <file>email.png</file>
+        <file>phone.png</file>
+        <file>pwdHide.png</file>
+        <file>pwdShow.png</file>
+        <file>user.png</file>
+        <file>closeDisabled.png</file>
+        <file>closeHover.png</file>
+        <file>closePressed.png</file>
+        <file>max.png</file>
+        <file>maxDisabled.png</file>
+        <file>maxHover.png</file>
+        <file>maxPressed.png</file>
+        <file>minDisabled.png</file>
+        <file>minHover.png</file>
+        <file>minPressed.png</file>
+        <file>check.png</file>
+        <file>checkDisabled.png</file>
+        <file>uncheck.png</file>
+        <file>uncheckDisabled.png</file>
+        <file>uncheckHover.png</file>
+        <file>radio.png</file>
+        <file>radioDisabled.png</file>
+        <file>unradio.png</file>
+        <file>unradioDisabled.png</file>
+        <file>unradioHover.png</file>
+        <file>customer.png</file>
+        <file>customerDisabled.png</file>
+        <file>customerHover.png</file>
+        <file>customerPressed.png</file>
+        <file>help.png</file>
+        <file>helpDisabled.png</file>
+        <file>helpHover.png</file>
+        <file>helpPressed.png</file>
+        <file>set.png</file>
+        <file>setHover.png</file>
+        <file>setPressed.png</file>
+        <file>ac1.png</file>
+        <file>ac2.png</file>
+        <file>ac3.png</file>
+        <file>ac4.png</file>
+        <file>acLeft.png</file>
+        <file>acRight.png</file>
+        <file>selectFileDisabled.png</file>
+        <file>down.png</file>
+        <file>up.png</file>
+        <file>del.png</file>
+        <file>delDisabled.png</file>
+        <file>delHover.png</file>
+        <file>delPressed.png</file>
+        <file>forward.png</file>
+        <file>op.png</file>
+        <file>opDisabled.png</file>
+        <file>opHover.png</file>
+        <file>opPressed.png</file>
+        <file>aboutWx.png</file>
+        <file>mod.png</file>
+        <file>backEnvset.png</file>
+        <file>openDir.png</file>
+        <file>openDirDisabled.png</file>
+        <file>openDirHover.png</file>
+        <file>openDirPressed.png</file>
+        <file>nextbtn.png</file>
+        <file>nextbtnDisabled.png</file>
+        <file>nextbtnHover.png</file>
+        <file>nextbtnPressed.png</file>
+        <file>startbtn.png</file>
+        <file>startbtnDisabled.png</file>
+        <file>startbtnHover.png</file>
+        <file>startbtnPressed.png</file>
+        <file>resource.qrc</file>
+        <file>leftItem/changeMax.png</file>
+        <file>leftItem/changeMaxSelected.png</file>
+        <file>leftItem/download.png</file>
+        <file>leftItem/downloadSelected.png</file>
+        <file>leftItem/manage.png</file>
+        <file>leftItem/manageSelected.png</file>
+        <file>leftItem/upload.png</file>
+        <file>leftItem/uploadSelected.png</file>
+        <file>closeError.png</file>
+        <file>closeInfo.png</file>
+        <file>closeSuccess.png</file>
+        <file>closeWarning.png</file>
+        <file>messageError.png</file>
+        <file>messageInfo.png</file>
+        <file>messageSuccess.png</file>
+        <file>messageWarning.png</file>
+        <file>updateBtn/updating0.png</file>
+        <file>updateBtn/updating1.png</file>
+        <file>updateBtn/updating2.png</file>
+        <file>updateBtn/updating3.png</file>
+        <file>updateBtn/updating4.png</file>
+        <file>updateBtn/updating5.png</file>
+        <file>updateBtn/updating6.png</file>
+        <file>updateBtn/updating7.png</file>
+        <file>updateBtn/updating8.png</file>
+        <file>updateBtn/updating9.png</file>
+        <file>updateBtn/updating10.png</file>
+        <file>updateBtn/updating11.png</file>
+        <file>updateBtn/updating12.png</file>
+        <file>updateBtn/updating13.png</file>
+        <file>updateBtn/updating14.png</file>
+        <file>updateBtn/updating15.png</file>
+        <file>updateBtn/updating16.png</file>
+        <file>updateBtn/updating17.png</file>
+        <file>updateBtn/updating18.png</file>
+        <file>updateBtn/updating19.png</file>
+        <file>updateBtn/updating20.png</file>
+        <file>updateBtn/updating21.png</file>
+        <file>updateBtn/updating22.png</file>
+        <file>updateBtn/updating23.png</file>
+        <file>updateBtn/updating24.png</file>
+        <file>updateBtn/updating25.png</file>
+        <file>updateBtn/updating26.png</file>
+        <file>updateBtn/updating27.png</file>
+        <file>updateBtn/updating28.png</file>
+        <file>updateBtn/updating29.png</file>
+        <file>loginBackground.png</file>
+        <file>copy.png</file>
+        <file>copyDisabled.png</file>
+        <file>copyHover.png</file>
+        <file>copyPressed.png</file>
+        <file>leftItem/changeMax (0).png</file>
+        <file>leftItem/changeMax (1).png</file>
+        <file>leftItem/changeMax (2).png</file>
+        <file>leftItem/changeMax (3).png</file>
+        <file>leftItem/changeMax (4).png</file>
+        <file>leftItem/changeMax (5).png</file>
+        <file>leftItem/changeMax (6).png</file>
+        <file>leftItem/changeMax (7).png</file>
+        <file>leftItem/changeMax (8).png</file>
+        <file>leftItem/changeMax (9).png</file>
+        <file>leftItem/changeMax (10).png</file>
+        <file>leftItem/changeMax (11).png</file>
+        <file>leftItem/changeMax (12).png</file>
+        <file>leftItem/changeMax (13).png</file>
+        <file>leftItem/changeMax (14).png</file>
+        <file>leftItem/changeMax (15).png</file>
+        <file>leftItem/changeMax (16).png</file>
+        <file>leftItem/changeMax (17).png</file>
+        <file>leftItem/changeMax (18).png</file>
+        <file>leftItem/changeMax (19).png</file>
+        <file>leftItem/changeMax (20).png</file>
+        <file>leftItem/changeMax (21).png</file>
+        <file>leftItem/changeMax (22).png</file>
+        <file>leftItem/changeMax (23).png</file>
+        <file>leftItem/download (0).png</file>
+        <file>leftItem/download (1).png</file>
+        <file>leftItem/download (2).png</file>
+        <file>leftItem/download (3).png</file>
+        <file>leftItem/download (4).png</file>
+        <file>leftItem/download (5).png</file>
+        <file>leftItem/download (6).png</file>
+        <file>leftItem/download (7).png</file>
+        <file>leftItem/download (8).png</file>
+        <file>leftItem/download (9).png</file>
+        <file>leftItem/download (10).png</file>
+        <file>leftItem/download (11).png</file>
+        <file>leftItem/download (12).png</file>
+        <file>leftItem/download (13).png</file>
+        <file>leftItem/download (14).png</file>
+        <file>leftItem/download (15).png</file>
+        <file>leftItem/download (16).png</file>
+        <file>leftItem/download (17).png</file>
+        <file>leftItem/download (18).png</file>
+        <file>leftItem/download (19).png</file>
+        <file>leftItem/download (20).png</file>
+        <file>leftItem/download (21).png</file>
+        <file>leftItem/download (22).png</file>
+        <file>leftItem/download (23).png</file>
+        <file>leftItem/manage (0).png</file>
+        <file>leftItem/manage (1).png</file>
+        <file>leftItem/manage (2).png</file>
+        <file>leftItem/manage (3).png</file>
+        <file>leftItem/manage (4).png</file>
+        <file>leftItem/manage (5).png</file>
+        <file>leftItem/manage (6).png</file>
+        <file>leftItem/manage (7).png</file>
+        <file>leftItem/manage (8).png</file>
+        <file>leftItem/manage (9).png</file>
+        <file>leftItem/manage (10).png</file>
+        <file>leftItem/manage (11).png</file>
+        <file>leftItem/manage (12).png</file>
+        <file>leftItem/manage (13).png</file>
+        <file>leftItem/manage (14).png</file>
+        <file>leftItem/manage (15).png</file>
+        <file>leftItem/manage (16).png</file>
+        <file>leftItem/manage (17).png</file>
+        <file>leftItem/manage (18).png</file>
+        <file>leftItem/manage (19).png</file>
+        <file>leftItem/manage (20).png</file>
+        <file>leftItem/manage (21).png</file>
+        <file>leftItem/manage (22).png</file>
+        <file>leftItem/manage (23).png</file>
+        <file>leftItem/upload (0).png</file>
+        <file>leftItem/upload (1).png</file>
+        <file>leftItem/upload (2).png</file>
+        <file>leftItem/upload (3).png</file>
+        <file>leftItem/upload (4).png</file>
+        <file>leftItem/upload (5).png</file>
+        <file>leftItem/upload (6).png</file>
+        <file>leftItem/upload (7).png</file>
+        <file>leftItem/upload (8).png</file>
+        <file>leftItem/upload (9).png</file>
+        <file>leftItem/upload (10).png</file>
+        <file>leftItem/upload (11).png</file>
+        <file>leftItem/upload (12).png</file>
+        <file>leftItem/upload (13).png</file>
+        <file>leftItem/upload (14).png</file>
+        <file>leftItem/upload (15).png</file>
+        <file>leftItem/upload (16).png</file>
+        <file>leftItem/upload (17).png</file>
+        <file>leftItem/upload (18).png</file>
+        <file>leftItem/upload (19).png</file>
+        <file>leftItem/upload (20).png</file>
+        <file>leftItem/upload (21).png</file>
+        <file>leftItem/upload (22).png</file>
+        <file>leftItem/upload (23).png</file>
+        <file>combodown.png</file>
+        <file>comboup.png</file>
+        <file>background.png</file>
+        <file>minus.png</file>
+        <file>plus.png</file>
+        <file>rendefault.png</file>
+        <file>backEnvsetHover.png</file>
+        <file>toLDisabled.png</file>
+        <file>toLHover.png</file>
+        <file>toLPressed.png</file>
+        <file>toRDisabled.png</file>
+        <file>toRHover.png</file>
+        <file>toRPressed.png</file>
+        <file>backEnvsetDisabled.png</file>
+        <file>backEnvsetPressed.png</file>
+        <file>minusDisabled.png</file>
+        <file>minusHover.png</file>
+        <file>minusPressed.png</file>
+        <file>plusDisabled.png</file>
+        <file>plusHover.png</file>
+        <file>plusPressed.png</file>
+        <file>previewLDisabled.png</file>
+        <file>previewLHover.png</file>
+        <file>previewLPressed.png</file>
+        <file>previewRDisabled.png</file>
+        <file>previewRHover.png</file>
+        <file>previewRPressed.png</file>
+        <file>previewMax.png</file>
+        <file>previewMin.png</file>
+        <file>msgBoxError.png</file>
+        <file>default_en.qss</file>
+        <file>rendefault_en.png</file>
+        <file>modDisabled.png</file>
+        <file>modHover.png</file>
+        <file>modPressed.png</file>
+        <file>maxmin.png</file>
+        <file>maxminDisabled.png</file>
+        <file>maxminHover.png</file>
+        <file>maxminPressed.png</file>
+        <file>setDisabled.png</file>
+        <file>os.png</file>
+        <file>first/en_us/0.png</file>
+        <file>first/en_us/1.png</file>
+        <file>first/en_us/2.png</file>
+        <file>first/en_us/3.png</file>
+        <file>first/en_us/4.png</file>
+        <file>first/en_us/5.png</file>
+        <file>first/en_us/6.png</file>
+        <file>first/en_us/7.png</file>
+        <file>first/en_us/8.png</file>
+        <file>first/zh_cn/0.png</file>
+        <file>first/zh_cn/1.png</file>
+        <file>first/zh_cn/2.png</file>
+        <file>first/zh_cn/3.png</file>
+        <file>first/zh_cn/4.png</file>
+        <file>first/zh_cn/5.png</file>
+        <file>first/zh_cn/6.png</file>
+        <file>first/zh_cn/7.png</file>
+        <file>first/zh_cn/8.png</file>
+        <file>wxCode_os.png</file>
+        <file>phone area code.txt</file>
+        <file>closeBtn.png</file>
+        <file>closeBtn_hover.png</file>
+        <file>closeBtn_pressed.png</file>
+        <file>refreshBtn.png</file>
+        <file>refreshBtn_hover.png</file>
+        <file>refreshBtn_pressed.png</file>
+        <file>shopcenter.png</file>
+        <file>shopcenterSelected.png</file>
+        <file>leftItem/shopcenter (0).png</file>
+        <file>leftItem/shopcenter (1).png</file>
+        <file>leftItem/shopcenter (2).png</file>
+        <file>leftItem/shopcenter (3).png</file>
+        <file>leftItem/shopcenter (4).png</file>
+        <file>leftItem/shopcenter (5).png</file>
+        <file>leftItem/shopcenter (6).png</file>
+        <file>leftItem/shopcenter (7).png</file>
+        <file>leftItem/shopcenter (8).png</file>
+        <file>leftItem/shopcenter (9).png</file>
+        <file>leftItem/shopcenter (10).png</file>
+        <file>leftItem/shopcenter (11).png</file>
+        <file>leftItem/shopcenter (12).png</file>
+        <file>leftItem/shopcenter (13).png</file>
+        <file>leftItem/shopcenter (14).png</file>
+        <file>leftItem/shopcenter (15).png</file>
+        <file>leftItem/shopcenter (16).png</file>
+        <file>leftItem/shopcenter (17).png</file>
+        <file>leftItem/shopcenter (18).png</file>
+        <file>leftItem/shopcenter (19).png</file>
+        <file>leftItem/shopcenter (20).png</file>
+        <file>leftItem/shopcenter (21).png</file>
+        <file>leftItem/shopcenter (22).png</file>
+        <file>leftItem/shopcenter (23).png</file>
+        <file>leftItem/shopcenter.png</file>
+        <file>leftItem/shopcenterSelected.png</file>
+        <file>accountBg.png</file>
+        <file>vipIcon.png</file>
+        <file>nonVipIcon.png</file>
+        <file>presentIcon.png</file>
+        <file>bitIcon.png</file>
+        <file>vip.png</file>
+        <file>vipHover.png</file>
+        <file>nonVip.png</file>
+        <file>nonVipHover.png</file>
+        <file>vipOverTime.png</file>
+        <file>vipOverTimeHover.png</file>
+        <file>pluginIcon.png</file>
+        <file>leftItem/changeMaterial (0).png</file>
+        <file>leftItem/changeMaterial (1).png</file>
+        <file>leftItem/changeMaterial (2).png</file>
+        <file>leftItem/changeMaterial (3).png</file>
+        <file>leftItem/changeMaterial (4).png</file>
+        <file>leftItem/changeMaterial (5).png</file>
+        <file>leftItem/changeMaterial (6).png</file>
+        <file>leftItem/changeMaterial (7).png</file>
+        <file>leftItem/changeMaterial (8).png</file>
+        <file>leftItem/changeMaterial (9).png</file>
+        <file>leftItem/changeMaterial (10).png</file>
+        <file>leftItem/changeMaterial (11).png</file>
+        <file>leftItem/changeMaterial (12).png</file>
+        <file>leftItem/changeMaterial (13).png</file>
+        <file>leftItem/changeMaterial (14).png</file>
+        <file>leftItem/changeMaterial (15).png</file>
+        <file>leftItem/changeMaterial (16).png</file>
+        <file>leftItem/changeMaterial (17).png</file>
+        <file>leftItem/changeMaterial (18).png</file>
+        <file>leftItem/changeMaterial (19).png</file>
+        <file>leftItem/changeMaterial (20).png</file>
+        <file>leftItem/changeMaterial (21).png</file>
+        <file>leftItem/changeMaterial (22).png</file>
+        <file>leftItem/changeMaterial (23).png</file>
+        <file>leftItem/changeMaterial.png</file>
+        <file>accountBackground.png</file>
+        <file>cgAuthorize.png</file>
+        <file>cloudRenderIcon.png</file>
+        <file>cloudToolIcon.png</file>
+    </qresource>
+</RCC>
