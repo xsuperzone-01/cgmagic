@@ -1,0 +1,9 @@
+﻿#finishText {
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+#frame {
+    border-image: url(:/status/load/mainlogo_en.png);
+}
+

@@ -1,0 +1,382 @@
+﻿/* 公共 */
+QWidget {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    outline: none;
+    background: transparent;
+}
+
+QPushButton {
+    background: transparent;
+}
+
+QCheckBox::indicator, QTableView::indicator {
+    width: 16px;
+    height: 16px;
+}
+QCheckBox::indicator {
+    margin-right: 2px;
+}
+QCheckBox::indicator:unchecked, QTableView::indicator:unchecked{border-image: url(:/uncheck.png);}
+QCheckBox::indicator:unchecked:hover, QTableView::indicator:unchecked:hover{border-image: url(:/uncheckHover.png);}
+QCheckBox::indicator:unchecked:pressed, QTableView::indicator:unchecked:pressed{border-image: url(:/uncheckHover.png);}
+QCheckBox::indicator:unchecked:disabled, QTableView::indicator:unchecked:disabled{border-image: url(:uncheckDisabled.png);}
+QCheckBox::indicator:checked, QTableView::indicator:checked{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:hover, QTableView::indicator:checked:hover{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:pressed, QTableView::indicator:checked:pressed{border-image: url(:/check.png);}
+QCheckBox::indicator:checked:disabled, QTableView::indicator:checked:disabled{border-image: url(:/checkDisabled.png);}
+
+QCheckBox::unchecked{color:#CFD3DC;}
+QCheckBox::unchecked:hover{color:#E5EAF3;}
+QCheckBox::unchecked:pressed{color:#E5EAF3;}
+QCheckBox::unchecked:disabled{color:#E5EAF3;}
+QCheckBox::checked{color:#E5EAF3;}
+QCheckBox::checked:hover{color:#E5EAF3;}
+QCheckBox::checked:pressed{color:#E5EAF3;}
+QCheckBox::checked:disabled{color:#CFD3DC;}
+
+QRadioButton::unchecked{color:#CFD3DC;}
+QRadioButton::unchecked:hover{color:#E5EAF3;}
+QRadioButton::unchecked:pressed{color:#E5EAF3;}
+QRadioButton::unchecked:disabled{color:#E5EAF3;}
+QRadioButton::checked{color:#E5EAF3;}
+QRadioButton::checked:hover{color:#E5EAF3;}
+QRadioButton::checked:pressed{color:#E5EAF3;}
+QRadioButton::checked:disabled{color:#CFD3DC;}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+}
+QRadioButton::indicator:unchecked{border-image: url(:/unradio.png);}
+QRadioButton::indicator:unchecked:hover, QRadioButton::indicator:unchecked[tab="1"]{border-image: url(:/unradioHover.png);}
+QRadioButton::indicator:unchecked:pressed{border-image: url(:/unradioHover.png);}
+QRadioButton::indicator:unchecked:disabled{border-image: url(:unradioDisabled.png);}
+QRadioButton::indicator:checked{border-image: url(:/radio.png);}
+QRadioButton::indicator:checked:hover, QRadioButton::indicator:checked[tab="1"]{border-image: url(:/radio.png);}
+QRadioButton::indicator:checked:pressed{border-image: url(:/radio.png);}
+QRadioButton::indicator:checked:disabled{border-image: url(:/radioDisabled.png);}
+
+QScrollBar:vertical {
+    width: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:vertical {
+    border-radius: 2px;
+    background: #4C4D4F;
+}
+QScrollBar:handle:vertical:hover {
+    background: #6B6D71;
+}
+QScrollBar:handle:vertical:pressed {
+    background: #8D9095;
+}
+QScrollBar::add-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+
+QScrollBar:horizontal {
+    height: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:horizontal {
+    border-radius: 2px;
+    background: #4C4D4F;
+}
+QScrollBar:handle:horizontal:hover {
+    background: #6B6D71;
+}
+QScrollBar:handle:horizontal:pressed {
+    background: #8D9095;
+}
+QScrollBar::add-line:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:horizontal {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:horizontal {
+    background:rgba(0,0,0,0%);
+}
+
+.min {
+    border-image: url(:/min.png);
+}
+.min:hover {
+    border-image: url(:/minHover.png);
+}
+.min:pressed {
+    border-image: url(:/minPressed.png);
+}
+.min:disabled {
+    border-image: url(:/minDisabled.png);
+}
+.max[maximize="maxmax"] {
+    border-image: url(:/max.png);
+}
+.max[maximize="maxmax"]:hover {
+    border-image: url(:/maxHover.png);
+}
+.max[maximize="maxmax"]:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max[maximize="maxmax"]:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.max[maximize="maxmin"] {
+    border-image: url(:/max.png);
+}
+.max[maximize="maxmin"]:hover {
+    border-image: url(:/maxHover.png);
+}
+.max[maximize="maxmin"]:pressed {
+    border-image: url(:/maxPressed.png);
+}
+.max[maximize="maxmin"]:disabled {
+    border-image: url(:/maxDisabled.png);
+}
+.close {
+    border-image: url(:/close.png);
+}
+.close:hover {
+    border-image: url(:/closeHover.png);
+}
+.close:pressed {
+    border-image: url(:/closePressed.png);
+}
+.close:disabled {
+    border-image: url(:/closeDisabled.png);
+}
+
+.okBtn {
+    border: none;
+    background: #137DD3;
+    color: #E5EAF3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.okBtn:hover {
+    background: #33A3FF;
+}
+.okBtn:pressed {
+    background: #004EA2;
+}
+.okBtn:disabled {
+    background: #003661;
+}
+
+.noBtn {
+    background: rgba(255,255,255,0.1);
+    color: #E5EAF3;
+/*    border: 1px solid rgba(255,255,255,0.1);*/
+    border-radius: 4px;
+    font-size: 14px;
+}
+.noBtn:hover {
+    color: #409EFF;
+/*    border: 1px solid #00D8C8;*/
+}
+.noBtn:pressed {
+    color: #66B1FF;
+/*    border: 1px solid #62FFF3;*/
+}
+.noBtn:disabled {
+    color: #6C6E72;
+/*    border: 1px solid rgba(255,255,255,0.12);*/
+}
+
+.lineEditOpenDir {
+    border-image: url(:/openDir.png);
+}
+.lineEditOpenDir:hover {
+    border-image: url(:/openDirHover.png);
+}
+.lineEditOpenDir:pressed {
+    border-image: url(:/openDirPressed.png);
+}
+.lineEditOpenDir:disabled {
+    border-image: url(:/openDirDisabled.png);
+}
+
+QLineEdit {
+    color: #676767;
+    border-radius: 4px;
+    border: 1px solid #636466;
+    background: transparent;
+    padding-left: 10px;
+}
+QLineEdit[text=""] {
+    color: rgba(255,255,255,0.3);
+}
+QLineEdit:hover, QLineEdit:focus {
+    border: 1px solid rgba(19, 125, 211, 1);
+}
+
+QScrollBar:vertical {
+    width: 4px;
+    background: rgba(0,0,0,0%);
+}
+QScrollBar:handle:vertical {
+    border-radius: 2px;
+    background: rgba(255,255,255,0.3);
+}
+QScrollBar:handle:vertical:hover {
+
+}
+QScrollBar:handle:vertical:pressed {
+
+}
+QScrollBar::add-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-line:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::add-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+QScrollBar::sub-page:vertical {
+    background:rgba(0,0,0,0%);
+}
+MsgBox #headWidget {
+background: #33353A;
+border-top-right-radius:8px;
+border-top-left-radius:8px;
+border-bottom: 1px solid #4C4D4F;
+}
+MsgBox #bottomWidget,MsgBox #bodyWidget{
+background: #2C2D31;
+}
+MsgBox #bottomWidget{
+border-bottom-right-radius:8px;
+border-bottom-left-radius:8px;
+}
+MsgBox #title {
+    color: #E5EAF3;
+    font-weight: bold;
+}
+MsgBox #titleIcon {
+border-image: url(:/titleIcon.png);
+}
+
+/* 卸载 */
+#logo {
+    border-image: url(:/logo.png);
+}
+#frame {
+    border-image: url(:/status/load/mainlogo.png);
+}
+#bgWid {
+/*    background: qlineargradient(spread:pad, y1:1, y2:0, stop:0 #111218, stop:1 rgba(23, 25, 33, 0.3));*/
+    border-image: url(:/background.png);
+    border-radius: 24px;
+}
+#beforText {
+    font-size: 16px;
+    color: #E5EAF3;
+    font-weight: bold;
+}
+.buttonColor{
+    background: #137DD3;
+}
+.buttonColor:hover {
+    background: #33A4FF;
+}
+.buttonColor:focus {
+    background: #004EA2;
+}
+.buttonColor:disabled {
+    background: #003661;
+}
+#next {
+    border-radius: 16px;
+    font-size: 14px;
+/*    background: #137DD3;*/
+    color: #FFFFFF;
+}
+#textEdit {
+    border: 1px solid #414243;
+}
+
+#ingText_2 {
+    font-size: 16px;
+    color: rgba(255,255,255,0.65);
+}
+#progressBar {
+    border-radius: 4px;
+    background: #414243;
+/*    background: rgba(255,255,255,0.3);*/
+}
+#progressBar::chunk {
+    border-radius: 4px;
+/*    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #FFFFFF, stop:1 #FFFFFF);*/
+    background: #8D9095;
+}
+#finish {
+    border-radius: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+#finishText {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+#afterText {
+    font-size: 14px;
+    color: #A3A6AD;
+    line-height: 22px;
+}
+#opinionLabel {
+    color: #A3A6AD;
+    font-size: 12px;
+}
+#opinionLabel[overflow="over"] {
+    color: #FF6C6C;
+/*    color: #A3A6AD;*/
+}
+#opinionLabel[overflow="noover"] {
+/*    color: #33A3FF;*/
+    color: #A3A6AD;
+}
+
+#opinionText {
+    border: 1px solid #636466;
+    border-radius: 8px;
+    font-size: 14px;
+    padding-top: 2px;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+}
+#opinionText[overflow="over"] {
+        border: 2px solid #FF6C6C;
+}
+#opinionText[overflow="noover"] {
+        border: 2px solid #137DD3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
