@@ -1,0 +1,13 @@
+build-*
+*.pro.user
+*.DS_Store
+*.idea
+killExe/exe.syso
+killExe/killExe.exe
+mbUtil/exe.syso
+mbUtil/mbUtil.exe
+softUpdate/cgmagicUpgrader.exe
+package/windows/tmp
+package/windows/update
+package/windows/client/exe
+subject/changeMax/changeMaxSvc/changeMaxSvc.dll
